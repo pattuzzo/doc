@@ -131,9 +131,7 @@
 - `border-top-width`: Define a largura superior.
 - `border-top-left-radius`: Define o raio superior esquerdo.
 - `border-top-right-radius`: Define o raio superior direito.
--
-
- `border-bottom`: Controla a borda inferior.
+- `border-bottom`: Controla a borda inferior.
 - `border-bottom-color`: Define a cor inferior.
 - `border-bottom-style`: Define o estilo inferior.
 - `border-bottom-width`: Define a largura inferior.
