@@ -1,406 +1,300 @@
-# Propriedades CSS
+## Propriedades de Importação e Codificação:
+- `@charset`: Estabelece a codificação de caracteres CSS.
+- `@import`: Importa folhas de estilo CSS.
+- `@font-face`: Carrega fontes externas.
+- `@keyframes`: Define animações CSS.
+- `@media`: Configura estilos CSS específicos para diferentes tipos de dispositivos.
 
-## Propriedades de Codificação e Importação:
-- `@charset`: Define a codificação de caracteres em uma folha de estilo CSS.
-- `@import`: Importa folhas de estilo CSS externas.
-- `@font-face`: Importa fontes externas.
-- `@keyframes`: Define as propriedades CSS para animação.
-- `@media`: Permite a utilização de diferentes propriedades CSS para diferentes tipos de telas.
+## Propriedades de Formatação de Página:
+- `widows`: Define o número mínimo de linhas no topo de uma página ou coluna.
+- `orphans`: Define o número mínimo de linhas no fim de uma página ou coluna.
 
-## Propriedades de Formatação de Texto:
-- `widows`: Especifica o número mínimo de linhas que devem ser deixadas no topo de uma coluna ou página.
-- `orphans`: Especifica o número mínimo de linhas que devem ser deixadas no final de uma coluna ou página.
+## Propriedades de Reset:
+- `all`: Reset total, exceto `unicode-bidi` e `direction`.
 
-## Propriedades de Redefinição:
-- `all`: Redefine todas as propriedades do elemento, exceto `unicode-bidi` e `direction`.
+## Propriedades de Organização:
+- `display`: Determina o tipo de display.
+- `float`: Configura o flutuamento do elemento.
+- `clear`: Controla o posicionamento de um elemento ao lado de um flutuante.
 
-## Propriedades de Layout e Posicionamento:
-- `display`: Especifica o tipo de display.
-- `float`: Especifica uma flutuação.
-- `clear`: Especifica a posição de um elemento próximo a um elemento flutuante.
-- `columns`: Especifica as propriedades: `column-width` e `column-count`.
-- `column-width`: Especifica a largura das colunas.
-- `column-count`: Especifica o número de colunas de um elemento.
-- `column-fill`: Especifica como as colunas são preenchidas.
-- `column-span`: Especifica quantas colunas um elemento de bloco deve preencher.
-- `column-rule`: Especifica as propriedades: `column-rule-width`, `column-rule-style` e `column-rule-color`.
-- `column-rule-width`: Especifica a largura da regra vertical.
-- `column-rule-style`: Especifica o estilo da regra vertical.
-- `column-rule-color`: Especifica a cor da regra vertical.
-- `flex`: Especifica as propriedades: `flex-grow`, `flex-shrink` e `flex-basis`.
-- `flex-grow`: Especifica como o item cresce em relação aos demais no container flexível.
-- `flex-shrink`: Especifica como o item diminui em relação aos demais no container flexível.
-- `flex-basis`: Especifica o tamanho inicial dos itens no container flexível.
-- `flex-flow`: Especifica as propriedades: `flex-direction` e `flex-wrap`.
-- `flex-direction`: Especifica a direção do container flexível.
-- `flex-wrap`: Especifica se os itens no container flexível devem quebrar a linha.
-- `justify-content`: Especifica o alinhamento dos itens no container flexível seguindo a direção definida no `flex-direction`.
-- `align-content`: Especifica o alinhamento das linhas dos itens no container flexível.
-- `align-items`: Especifica o alinhamento dos itens no container flexível seguindo a direção contrária definida no `flex-direction`.
-- `align-self`: Especifica o alinhamento individual de um item no container flexível.
-- `order`: Especifica a ordem do item em relação aos demais no container flexível.
-- `grid`: Especifica as propriedades: `grid-template-rows`, `grid-template-columns`, `grid-template-areas`, `grid-auto-rows`, `grid-auto-columns` e `grid-auto-flow`.
-- `grid-template`: Especifica as propriedades: `grid-template-rows`, `grid-template-columns` e `grid-template-areas`.
-- `grid-template-rows`: Especifica o tamanho para cada linha no container gradeado.
-- `grid-template-columns`: Especifica o número de colunas e o tamanho para cada coluna no container gradeado.
-- `grid-template-areas`: Especifica áreas com identificadores no container gradeado.
-- `grid-auto-rows`: Especifica um tamanho padrão para as linhas no container gradeado.
-- `grid-auto-columns`: Especifica um tamanho padrão para as colunas no container gradeado.
-- `grid-auto-flow`: Especifica como os itens são inseridos no container gradeado.
-- `grid-row`: Especifica as propriedades: `grid-row-start` e `grid-row-end`.
-- `grid-column`: Especifica as propriedades: `grid-column-start` e `grid-column-end`.
-- `grid-area`: Especifica as propriedades: `grid-row-start`, `grid-column-start`, `grid-row-end` e `grid-column-end`.
-- `grid-row-start`: Especifica em qual linha um item começa no container gradeado.
-- `grid-column-start`: Especifica em qual coluna um item começa no container gradeado.
-- `grid-row-end`: Especifica em qual linha um item termina no container gradeado.
-- `grid-column-end`: Especifica em qual coluna um item termina no container gradeado.
-- `gap`: Especifica as propriedades: `row-gap` e `column-gap` no container gradeado.
-- `row-gap`: Especifica o tamanho do espaço entre as linhas no container gradeado.
-- `column-gap`: Especifica o espaço entre as colunas no container gradeado.
-- `vertical-align`: Especifica o alinhamento vertical de um elemento inline.
-- `position`: Especifica o tipo de posicionamento.
-- `left`: Especifica a distância até a esquerda.
-- `right`: Especifica a distância até a direita.
-- `top`: Especifica a distância até o topo.
-- `bottom`: Especifica a distância até o fundo.
-- `z-index`: Especifica a ordem na pilha de renderização no eixo-z.
-- `isolation`: Especifica uma ordem de pilha isolada para o elemento.
-- `object-fit`: Especifica como os elementos `img` e `video` devem ser redimensionados dentro dos próprios containers.
-- `object-position`: Especifica a posição dos elementos `img` e `video` dentro dos próprios containers.
-- `visibility`: Especifica a visibilidade.
-- `opacity`: Especifica a opacidade.
-- `filter`: Adiciona um efeito visual no elemento.
-- `box-shadow`: Adiciona uma sombra ao elemento.
-- `box-decoration-break`: Especifica como as propried
+## Propriedades de Coluna:
+- `columns`: Controla `column-width` e `column-count`.
+- `column-width`: Define a largura das colunas.
+- `column-count`: Define a quantidade de colunas.
+- `column-fill`: Configura o preenchimento das colunas.
+- `column-span`: Define o alcance de um elemento de bloco.
+- `column-rule`: Controla `column-rule-width`, `column-rule-style` e `column-rule-color`.
+- `column-rule-width`: Define a largura da linha entre colunas.
+- `column-rule-style`: Define o estilo da linha entre colunas.
+- `column-rule-color`: Define a cor da linha entre colunas.
 
-ades: `box-shadow`, `margin`, `border`, `border-image`, `padding`, `background` e `clip-path` são adicionadas quando o container é fragmentado.
-- `mix-blend-mode`: Especifica como um elemento deve se mesclar com o fundo do elemento pai.
-- `box-sizing`: Especifica como o container é dimensionado.
-- `height`: Especifica a altura.
-- `width`: Especifica a largura.
-- `max-height`: Especifica a maior altura permitida.
-- `max-width`: Especifica a maior largura permitida.
-- `min-height`: Especifica a menor altura permitida.
-- `min-width`: Especifica a menor largura permitida.
+## Flexbox:
+- `flex`: Controla `flex-grow`, `flex-shrink` e `flex-basis`.
+- `flex-grow`: Define a proporção de crescimento.
+- `flex-shrink`: Define a proporção de encolhimento.
+- `flex-basis`: Define o tamanho inicial.
+- `flex-flow`: Controla `flex-direction` e `flex-wrap`.
+- `flex-direction`: Define a direção principal.
+- `flex-wrap`: Define se os itens devem quebrar a linha.
+- `justify-content`: Alinha itens na direção principal.
+- `align-content`: Alinha linhas de itens.
+- `align-items`: Alinha itens na direção cruzada.
+- `align-self`: Controla o alinhamento individual.
+- `order`: Controla a ordem dos itens.
 
-## Propriedades de Borda:
-- `outline`: Especifica as propriedades: `outline-width`, `outline-style` e `outline-color`.
-- `outline-width`: Especifica a largura do contorno.
-- `outline-style`: Especifica o estilo do contorno.
-- `outline-color`: Especifica a cor do contorno.
-- `outline-offset`: Especifica a distância do contorno.
-- `margin`: Especifica todas as propriedades de margem.
-- `margin-top`: Especifica a margem superior.
-- `margin-bottom`: Especifica a margem inferior.
-- `margin-left`: Especifica a margem da esquerda.
-- `margin-right`: Especifica a margem da direita.
-- `border`: Especifica todas as propriedades de borda.
-- `border-color`: Especifica a cor da borda.
-- `border-radius`: Especifica o arredondamento da borda.
-- `border-width`: Especifica a largura da borda.
-- `border-style`: Especifica o estilo da borda.
-- `border-collapse`: Especifica se as bordas das células em uma tabela devem se colapsar em uma.
-- `border-spacing`: Especifica o espaçamento entre os itens a partir da borda.
-- `border-image`: Especifica todas as propriedades de imagem a ser usada como borda.
-- `border-image-outset`: Especifica o início da borda.
-- `border-image-repeat`: Especifica a repetição da imagem a ser usada como borda.
-- `border-image-slice`: Especifica como cortar a imagem a ser usada como borda.
-- `border-image-source`: Especifica a fonte da imagem a ser usada como borda.
-- `border-image-width`: Especifica a largura da imagem a ser usada como borda.
-- `border-top`: Especifica a borda superior.
-- `border-top-color`: Especifica a cor da borda superior.
-- `border-top-style`: Especifica o estilo da borda superior.
-- `border-top-width`: Especifica a largura da borda superior.
-- `border-top-left-radius`: Especifica o arredondamento da borda superior da esquerda.
-- `border-top-right-radius`: Especifica o arredondamento da borda superior da direita.
-- `border-bottom`: Especifica a borda inferior.
-- `border-bottom-color`: Especifica a cor da borda inferior.
-- `border-bottom-style`: Especifica o estilo da borda inferior.
-- `border-bottom-width`: Especifica a largura da borda inferior.
-- `border-bottom-left-radius`: Especifica o arredondamento da borda inferior da esquerda.
-- `border-bottom-right-radius`: Especifica o arredondamento da borda inferior da direita.
-- `border-left`: Especifica a borda da esquerda.
-- `border-left-color`: Especifica a cor da borda da esquerda.
-- `border-left-style`: Especifica o estilo da borda da esquerda.
-- `border-left-width`: Especifica a largura da borda da esquerda.
-- `border-right`: Especifica a borda da direita.
-- `border-right-color`: Especifica a cor da borda da direita.
-- `border-right-style`: Especifica o estilo da borda da direita.
-- `border-right-width`: Especifica a largura da borda da direita.
+## Grid:
+- `grid`: Controla as propriedades do grid.
+- `grid-template-rows`: Define o tamanho das linhas.
+- `grid-template-columns`: Define o tamanho e número de colunas.
+- `grid-template-areas`: Define áreas nomeadas.
+- `grid-auto-rows`: Define um tamanho padrão para linhas.
+- `grid-auto-columns`: Define um tamanho padrão para colunas.
+- `grid-auto-flow`: Controla a sequência de auto colocação.
+- `grid-row`: Controla `grid-row-start` e `grid-row-end`.
+- `grid-column`: Controla `grid-column-start` e `grid-column-end`.
+- `grid-area`: Controla as propriedades de posição de um item.
+- `grid-row-start`: Define onde um item começa na linha.
+- `grid-column-start`: Define onde um item começa na coluna.
+- `grid-row-end`: Define onde um item termina na linha.
+- `grid-column-end`: Define onde um item termina na coluna.
+- `gap`: Controla `row-gap` e `column-gap`.
+- `row-gap`: Define o espaço entre linhas.
+- `column-gap`: Define o espaço entre colunas.
 
-## Propriedades de Preenchimento:
-- `padding`: Especifica todas as propriedades de preenchimento.
-- `padding-top`: Especifica o preenchimento superior.
-- `padding-bottom`: Especifica o preenchimento inferior.
-- `padding-left`: Especifica o preenchimento da esquerda.
-- `padding-right`: Especifica o preenchimento da direita.
+## Position:
+- `position`: Define o tipo de posicionamento.
+- `left`: Define a distância da esquerda.
+- `right`: Define a distância da direita.
+- `top`: Define a distância do topo.
+- `bottom`: Define a distância do fundo.
+- `z-index`: Controla a ordem de empilhamento.
+- `isolation`: Define uma pilha de contexto isolada.
 
-## Propriedades de Fundo:
-- `background`: Especifica todas as propriedades de fundo.
-- `background-color`: Especifica a cor do fundo.
-- `background-image`: Especifica uma imagem de fundo.
-- `background-position`: Especifica a posição da imagem de fundo.
-- `background-size`: Especifica o tamanho da imagem de fundo.
-- `background-repeat`: Especifica se a imagem de fundo deve repetir.
-- `background-origin`: Especifica a origem da posição da imagem de fundo.
-- `background-clip`: Es
+## Propriedades de Mídia:
+- `object-fit`: Define como `img` e `video` devem se ajustar.
+- `object-position`: Controla a posição de `img` e `video`.
 
-pecifica até onde o fundo deve se estender no container.
-- `background-attachment`: Especifica se a imagem de fundo deve rolar com a página.
-- `background-blend-mode`: Especifica como as camadas de fundo irão se mesclar.
-
-## Propriedades de Transbordamento e Quebra de Texto:
-- `overflow`: Especifica o tratamento para o conteúdo transbordado.
-- `overflow-wrap`: Especifica a quebra do conteúdo transbordado.
-- `overflow-x`: Especifica o tratamento para o conteúdo transbordado no eixo x.
-- `overflow-y`: Especifica o tratamento para o conteúdo transbordado no eixo y.
-- `color`: Define a cor do texto.
-- `text-align`: Especifica o alinhamento do texto.
-- `text-align-last`: Especifica o alinhamento da última linha quando o `text-justify` é definido.
-- `text-decoration`: Especifica as propriedades: `text-decoration-line`, `text-decoration-color`, `text-decoration-style` e `text-decoration-thickness`.
-- `text-decoration-line`: Especifica a posição da linha decorativa sobre o texto.
-- `text-decoration-color`: Especifica a cor da linha decorativa.
-- `text-decoration-style`: Especifica o estilo de linha decorativa.
-- `text-decoration-thickness`: Especifica a espessura da linha decorativa.
-- `text-indent`: Especifica uma indentação ao texto.
-- `text-justify`: Especifica a justificação quando o `text-align` é definido com "justify".
-- `text-overflow`: Especifica o tratamento para o texto transbordado.
-- `text-shadow`: Adiciona uma sombra ao texto.
-- `text-transform`: Especifica a capitalização do texto.
-- `text-underline-position`: Especifica a posição da linha decorativa.
-
-## Propriedades de Fonte:
-- `font`: Especifica todas as propriedades de fonte.
-- `font-family`: Especifica a família da fonte.
-- `font-style`: Especifica o estilo da fonte.
-- `font-size`: Especifica o tamanho da fonte.
-- `font-weight`: Especifica o peso da fonte.
-- `font-feature-settings`: Permite um maior controle sobre fontes OpenType.
-- `font-kerning`: Especifica o uso das informações de kerning.
-- `font-size-adjust`: Especifica o controle do tamanho da fonte caso a primeira esteja indisponível.
-- `font-variant`: Especifica se o texto deve ser exibido em um small-caps.
-- `font-variant-caps`: Especifica glifos alternativos para letras maiúsculas.
-
-## Propriedades de Espaçamento, Linha e Quebra de Palavras:
-- `white-space`: Especifica como o espaço em branco é tratado.
-- `word-break`: Especifica como as palavras são quebradas.
-- `word-wrap`: Especifica como as palavras devem se quebrar.
-- `word-spacing`: Especifica o tamanho do espaço entre as palavras.
-- `letter-spacing`: Especifica o tamanho do espaço entre as letras.
-- `line-height`: Especifica a altura da linha.
-
-## Propriedades de Texto Bi-Direcional:
-- `direction`: Especifica a direção do texto no elemento de nível de bloco.
-- `unicode-bidi`: Especifica se o texto deve ser substituído para oferecer suporte a outros idiomas.
-- `writing-mode`: Especifica se o texto é horizontal ou vertical.
-- `tab-size`: Especifica a largura da tabulação.
-- `quotes`: Especifica o tipo de aspas para citações.
-- `hyphens`: Especifica se um hífen deve ser adicionado e a linha quebrada num texto transbordado.
-
-## Propriedades de Estilo de Lista:
-- `list-style`: Especifica todas as propriedades de estilo.
-- `list-style-image`: Especifica uma imagem como estilo da lista.
-- `list-style-position`: Especifica a posição do estilo da lista.
-- `list-style-type`: Especifica o tipo do estilo da lista.
-
-## Propriedades de Tabelas:
-- `caption-side`: Especifica o posicionamento da legenda de uma tabela.
-- `empty-cells`: Especifica se deve exibir bordas em células vazias em uma tabela.
-- `table-layout`: Especifica o algoritmo utilizado na renderização da tabela.
-
-## Propriedades de Máscara e Imagem:
-- `mask-image`: Especifica uma camada que serve como máscara para um elemento.
-- `mask-origin`: Especifica a origem da posição da máscara.
-- `mask-position`: Especifica a posição da máscara.
-- `mask-repeat`: Especifica se a máscara deve repetir.
-- `mask-size`: Especifica o tamanho da máscara.
-
-## Propriedades de Renderização de Imagem:
-- `image-rendering`: Especifica o algoritmo utilizado para o dimensionamento da imagem.
-
-## Propriedades de Comportamento do Mouse e Seleção de Texto:
-- `scroll-behavior`: Especifica a animação do scroll ao clicar em um link para a própria página.
-- `cursor`: Especifica o tipo de cursor do mouse sobre o elemento.
-- `caret-color`: Especifica a cor do cursor em elementos editáveis, como `input` e `textarea`.
-- `accent-color`: Especifica a cor de tipos de `input` e `progress`.
-- `pointer-events`: Especifica se um elemento reage ao apontamento do mouse.
-- `user-select`: Especifica se o texto no elemento é selecionável.
-
-## Propriedades de Transformação e Animação:
-- `backface-visibility`: Especifica a visibilidade da face traseira.
-- `resize`: Especifica se um elemento é redimensionável.
-- `clip-path`: Permite que você corte o elemento no formato desejado.
-- `perspective`: Especifica um posicionamento 3D para o elemento.
-- `perspective-origin`: Especifica a origem do posicionamento 3D.
-- `transform`: Especifica todas as propriedades de transformação.
-- `transform-origin`: Especifica a origem da transformação.
-- `transform-style`: Especifica o estilo da transformação.
-- `transition`: Especifica todas as propriedades de transição.
-- `transition-property`: Especifica a propriedade de transição.
-- `transition-delay`: Especifica o atraso da transição.
-- `transition-duration`: Especifica a duração da transição.
-- `transition-timing-function`: Especifica a mudança de velocidade da transição.
-- `animation`: Especifica todas as propriedades de animação.
-- `animation
-
--name`: Especifica o nome da animação.
-- `animation-duration`: Especifica a duração da animação.
-- `animation-timing-function`: Especifica a mudança de velocidade da animação.
-- `animation-delay`: Especifica o atraso da animação.
-- `animation-iteration-count`: Especifica o número de iterações da animação.
-- `animation-direction`: Especifica se a animação será reproduzida para frente, para trás ou alternada.
-- `animation-fill-mode`: Especifica o estado do estilo no início/fim da animação.
-- `animation-play-state`: Especifica o estado de execução da animação.
-
-## Propriedades de Filtros de Cores:
-- `filter`: Aplica efeitos visuais (por exemplo, desfoque, saturação, brilho) em um elemento.
-
-## Propriedades de Efeitos de Visibilidade e Opacidade:
-- `visibility`: Especifica a visibilidade de um elemento.
-- `opacity`: Especifica a opacidade de um elemento.
-- `backdrop-filter`: Aplica um filtro de efeitos visuais no plano de fundo de um elemento.
-
-## Propriedades de Opacidade e Transparência:
-- `opacity`: Define a opacidade de um elemento.
+## Propriedades de Visibilidade:
+- `visibility`: Controla a visibilidade do elemento.
+- `opacity`: Controla a opacidade do elemento.
 
 ## Propriedades de Cor:
 - `color`: Define a cor do texto.
 - `background-color`: Define a cor do fundo.
 
-## Propriedades de Tamanho e Dimensão:
-- `height`: Define a altura de um elemento.
-- `width`: Define a largura de um elemento.
-- `max-height`: Define a altura máxima de um elemento.
-- `max-width`: Define a largura máxima de um elemento.
-- `min-height`: Define a altura mínima de um elemento.
-- `min-width`: Define a largura mínima de um elemento.
+## Propriedades de Dimensão:
+- `height`: Define a altura.
+- `width`: Define a largura.
+- `max-height`: Define a altura máxima.
+- `max-width`: Define a largura máxima.
+- `min-height`: Define a altura mínima.
+- `min-width`: Define a largura mínima.
+
+## Outline:
+- `outline`: Controla as propriedades do contorno.
+- `outline-width`: Define a largura do contorno.
+- `outline-style`: Define o estilo do contorno.
+- `outline-color`: Define a cor do contorno.
+- `outline-offset`: Define a distância entre a borda e o contorno.
 
 ## Propriedades de Margem:
-- `margin`: Define a margem ao redor de um elemento.
-- `margin-top`: Define a margem superior de um elemento.
-- `margin-bottom`: Define a margem inferior de um elemento.
-- `margin-left`: Define a margem da esquerda de um elemento.
-- `margin-right`: Define a margem da direita de um elemento.
+- `margin`: Define a margem.
+- `margin-top`: Define a margem superior.
+- `margin-bottom`: Define a margem inferior.
+- `margin-left`: Define a margem esquerda.
+- `margin-right`: Define a margem direita.
 
-## Propriedades de Espaçamento Interno:
-- `padding`: Define o espaço interno dentro do contorno de um elemento.
-- `padding-top`: Define o espaçamento interno superior de um elemento.
-- `padding-bottom`: Define o espaçamento interno inferior de um elemento.
-- `padding-left`: Define o espaçamento interno da esquerda de um elemento.
-- `padding-right`: Define o espaçamento interno da direita de um elemento.
+## Propriedades de Preenchimento:
+- `padding`: Define o preenchimento.
+- `padding-top`: Define o preenchimento superior.
+- `padding-right`: Define o preenchimento direito.
+- `padding-bottom`: Define o preenchimento inferior.
+- `padding-left`: Define o preenchimento esquerdo.
 
 ## Propriedades de Borda:
-- `border`: Define todas as propriedades de borda.
-- `border-color`: Define a cor da borda.
-- `border-radius`: Define o arredondamento da borda.
+- `border`: Controla as propriedades da borda.
 - `border-width`: Define a largura da borda.
 - `border-style`: Define o estilo da borda.
-- `border-top`: Define a borda superior.
-- `border-top-color`: Define a cor da borda superior.
-- `border-top-style`: Define o estilo da borda superior.
-- `border-top-width`: Define a largura da borda superior.
-- `border-top-left-radius`: Define o arredondamento da borda superior da esquerda.
-- `border-top-right-radius`: Define o arredondamento da borda superior da direita.
-- `border-bottom`: Define a borda inferior.
-- `border-bottom-color`: Define a cor da borda inferior.
-- `border-bottom-style`: Define o estilo da borda inferior.
-- `border-bottom-width`: Define a largura da borda inferior.
-- `border-bottom-left-radius`: Define o arredondamento da borda inferior da esquerda.
-- `border-bottom-right-radius`: Define o arredondamento da borda inferior da direita.
-- `border-left`: Define a borda da esquerda.
-- `border-left-color`: Define a cor da borda da esquerda.
-- `border-left-style`: Define o estilo da borda da esquerda.
-- `border-left-width`: Define a largura da borda da esquerda.
-- `border-right`: Define a borda da direita.
-- `border-right-color`: Define a cor da borda da direita.
-- `border-right-style`: Define o estilo da borda da direita.
-- `border-right-width`: Define a largura da borda da direita.
+- `border-color`: Define a cor da borda.
+- `border-radius`: Define o raio dos cantos.
+- `border-collapse`: Controla o colapso das bordas.
+- `border-spacing`: Controla o espaçamento das bordas.
+- `border-image`: Controla a imagem da borda.
+- `border-image-outset`: Define o espaço externo da borda.
+- `border-image-repeat`: Define a repetição da imagem.
+- `border-image-slice`: Define a divisão da imagem.
+- `border-image-source`: Define a origem da imagem.
+- `border-image-width`: Define a largura da imagem.
+- `border-top`: Controla a borda superior.
+- `border-top-color`: Define a cor superior.
+- `border-top-style`: Define o estilo superior.
+- `border-top-width`: Define a largura superior.
+- `border-top-left-radius`: Define o raio superior esquerdo.
+- `border-top-right-radius`: Define o raio superior direito.
+-
 
-## Propriedades de Fundo:
-- `background`: Define todas as propriedades de fundo.
-- `background-color`: Define a cor do fundo.
-- `background-image`: Define uma imagem de fundo.
-- `background-position`: Define a posição da imagem de fundo.
-- `background-size`: Define o tamanho da imagem de fundo.
-- `background-repeat`: Define se a imagem de fundo deve repetir.
-- `background-origin`: Define a origem da posição da imagem de fundo.
-- `background-clip`: Define até onde o fundo deve se estender no elemento.
-- `background-attachment`: Define se a imagem de fundo deve rolar com a página.
-- `background-blend-mode`: Define como as camadas de fundo irão se mesclar.
+ `border-bottom`: Controla a borda inferior.
+- `border-bottom-color`: Define a cor inferior.
+- `border-bottom-style`: Define o estilo inferior.
+- `border-bottom-width`: Define a largura inferior.
+- `border-bottom-left-radius`: Define o raio inferior esquerdo.
+- `border-bottom-right-radius`: Define o raio inferior direito.
+- `border-left`: Controla a borda esquerda.
+- `border-left-color`: Define a cor esquerda.
+- `border-left-style`: Define o estilo esquerdo.
+- `border-left-width`: Define a largura esquerda.
+- `border-right`: Controla a borda direita.
+- `border-right-color`: Define a cor direita.
+- `border-right-style`: Define o estilo direito.
+- `border-right-width`: Define a largura direita.
 
-## Propriedades de Espaçamento, Linha e Quebra de Palavras:
-- `white-space`: Define como o espaço em branco é tratado.
-- `word-break`: Define como as palavras são quebradas.
-- `word-wrap`: Define como as palavras devem se quebrar.
-- `word-spacing`: Define o tamanho do espaço entre as palavras.
-- `letter-spacing`: Define o tamanho do espaço entre as letras.
-- `line-height`: Define a altura da linha.
+## Overflow:
+- `overflow`: Controla o comportamento de conteúdo transbordado.
+- `overflow-wrap`: Controla a quebra de palavras em conteúdo transbordado.
+- `overflow-x`: Controla o comportamento de transbordamento no eixo x.
+- `overflow-y`: Controla o comportamento de transbordamento no eixo y.
 
-## Propriedades de Texto Bi-Direcional:
-- `direction`: Define a direção do texto no elemento de nível de bloco.
-- `unicode-bidi`: Define se o texto deve ser substituído para oferecer suporte a outros idiomas.
-- `writing-mode`: Define se o texto é horizontal ou vertical.
-- `tab-size`: Define a largura da tabulação.
-- `quotes`: Define o tipo de aspas para citações.
-- `hyphens`: Define se um hífen deve ser adicionado e a linha quebrada num texto transbordado.
+## Propriedades de Estilo de Texto:
+- `font`: Controla todas as propriedades de fonte.
+- `font-family`: Define a família de fonte.
+- `font-style`: Define o estilo da fonte.
+- `font-size`: Define o tamanho da fonte.
+- `font-weight`: Define a espessura da fonte.
+- `font-feature-settings`: Permite controle sobre fontes OpenType.
+- `font-kerning`: Define o uso de kerning.
+- `font-size-adjust`: Controla o tamanho da fonte em caso de indisponibilidade.
+- `font-variant`: Controla o texto em small-caps.
+- `font-variant-caps`: Define glifos alternativos para letras maiúsculas.
+- `line-height`: Define a altura da linha do texto.
+- `letter-spacing`: Define o espaçamento entre caracteres.
+- `word-break`: Controla a quebra de palavras.
+- `word-wrap`: Controla a quebra de palavras longas.
+- `word-spacing`: Define o espaçamento entre palavras.
+- `text-align`: Alinha o texto na direção principal.
+- `text-align-last`: Alinha a última linha de texto quando justificado.
+- `text-decoration`: Controla a decoração de texto.
+- `text-decoration-line`: Define a posição da linha decorativa no texto.
+- `text-decoration-color`: Define a cor da linha decorativa.
+- `text-decoration-style`: Define o estilo da linha decorativa.
+- `text-decoration-thickness`: Define a espessura da linha decorativa.
+- `text-indent`: Define o recuo da primeira linha do texto.
+- `text-justify`: Define a justificação de texto justificado.
+- `text-overflow`: Controla o tratamento de texto transbordado.
+- `text-shadow`: Adiciona sombras ao texto.
+- `text-transform`: Controla a capitalização do texto.
+- `text-underline-position`: Define a posição da linha sublinhada.
+- `white-space`: Define o tratamento do espaço em branco dentro do elemento.
 
-## Propriedades de Estilo de Lista:
-- `list-style`: Define todas as propriedades de estilo.
-- `list-style-image`: Define uma imagem como estilo da lista.
-- `list-style-position`: Define a posição do estilo da lista.
-- `list-style-type`: Define o tipo do estilo da lista.
+## Propriedades de Listas:
+- `list-style`: Controla o estilo da lista.
+- `list-style-type`: Define o tipo de marcador ou numeração da lista.
+- `list-style-position`: Define a posição do marcador em relação ao conteúdo (interno ou externo).
+- `list-style-image`: Define uma imagem como marcador de lista.
 
 ## Propriedades de Tabelas:
-- `caption-side`: Define o posicionamento da legenda de uma tabela.
-- `empty-cells`: Define se deve exibir bordas em células vazias em uma tabela.
-- `table-layout`: Define o algoritmo utilizado na renderização da tabela.
+- `caption-side`: Define o posicionamento da legenda da tabela.
+- `empty-cells`: Controla a exibição de bordas em células vazias da tabela.
+- `table-layout`: Controla o algoritmo de renderização da tabela.
 
 ## Propriedades de Máscara e Imagem:
-- `mask-image`: Define uma camada que serve como máscara para um elemento.
+- `mask-image`: Controla a imagem da máscara.
 - `mask-origin`: Define a origem da posição da máscara.
 - `mask-position`: Define a posição da máscara.
-- `mask-repeat`: Define se a máscara deve repetir.
+- `mask-repeat`: Controla a repetição da máscara.
 - `mask-size`: Define o tamanho da máscara.
 
 ## Propriedades de Renderização de Imagem:
-- `image-rendering`: Define o algoritmo utilizado para o dimensionamento da imagem.
+- `image-rendering`: Controla o algoritmo de dimensionamento da imagem.
 
-## Propriedades de Comportamento do Mouse e Seleção de Texto:
-- `scroll-behavior`: Define a animação do scroll ao clicar em um link para a própria página.
-- `cursor`: Define o tipo de cursor do mouse sobre o elemento.
-- `caret-color`: Define a cor do cursor em elementos editáveis, como `input` e `textarea`.
-- `accent-color`: Define a cor de tipos de `input` e `progress`.
-- `pointer-events`: Define se um elemento reage ao apontamento do mouse.
-- `user-select`: Define se o texto no elemento é selecionável.
+## Propriedades de Fundo:
+- `background`: Controla todas as propriedades de fundo.
+- `background-color`: Define a cor de fundo.
+- `background-image`: Define uma imagem de fundo.
+- `background-position`: Define a posição da imagem de fundo.
+- `background-size`: Define o tamanho da imagem de fundo.
+- `background-repeat`: Controla a repetição da imagem de fundo.
+- `background-origin`: Define a origem da posição da imagem de fundo.
+- `background-clip`: Define até onde o fundo deve se estender no elemento.
+- `background-attachment`: Controla se a imagem de fundo deve rolar com a página.
+- `background-blend-mode`: Controla o modo de mesclagem das camadas de fundo.
 
-## Propriedades de Transformação e Animação:
-- `backface-visibility`: Define a visibilidade da face traseira.
-- `resize`: Define se um elemento é redimensionável.
-- `clip-path`: Permite que você corte o elemento no formato desejado.
-- `perspective`: Define um posicionamento 3D para o elemento.
-- `perspective-origin`: Define a origem do posicionamento 3D.
-- `transform`: Define todas as propriedades de transformação.
+## Propriedades de Efeitos e Sombras:
+- `text-shadow`: Adiciona sombras ao texto.
+- `box-shadow`: Adiciona sombras ao redor de um elemento.
+
+## Propriedades de Texto Bidirecional:
+- `direction`: Define a direção do texto em um elemento de bloco.
+- `unicode-bidi`: Define o comportamento do texto para oferecer suporte a outros idiomas.
+- `writing-mode`: Define a direção do texto (horizontal ou vertical).
+- `tab-size`: Define a largura da tabulação.
+- `quotes`: Define o estilo de citações.
+- `hyphens`: Define o comportamento de quebra de palavras em texto transbordado.
+
+## Transformações:
+- `transform`: Controla todas as transformações.
 - `transform-origin`: Define a origem da transformação.
 - `transform-style`: Define o estilo da transformação.
-- `transition`: Define todas as propriedades de transição.
-- `transition-property`: Define a propriedade de transição.
+- `perspective`: Define uma perspectiva 3D para o elemento.
+- `perspective-origin`: Define a origem da perspectiva 3D.
+- `backface-visibility`: Controla a visibilidade da face traseira.
+
+## Transições:
+- `transition`: Controla todas as transições.
+- `transition-property`: Define a propriedade alvo da transição.
 - `transition-delay`: Define o atraso da transição.
 - `transition-duration`: Define a duração da transição.
-- `transition-timing-function`: Define a mudança de velocidade da transição.
-- `animation`: Define todas as propriedades de animação.
+- `transition-timing-function`: Define a curva de aceleração da transição.
+
+## Animações:
+- `animation`: Controla todas as animações.
 - `animation-name`: Define o nome da animação.
 - `animation-duration`: Define a duração da animação.
-- `animation-timing-function`: Define a mudança de velocidade da animação.
-- `animation-delay`: Define o atraso da animação.
+- `animation-timing-function`: Define a curva de aceleração da animação.
+- `animation-delay`: Define o atraso do início
+
+ da animação.
 - `animation-iteration-count`: Define o número de iterações da animação.
-- `animation-direction`: Define se a animação será reproduzida para frente, para trás ou alternada.
-- `animation-fill-mode`: Define o estado do estilo no início/fim da animação.
+- `animation-direction`: Define a direção da animação.
+- `animation-fill-mode`: Define o estilo aplicado no início/fim da animação.
 - `animation-play-state`: Define o estado de execução da animação.
+
+## Propriedades de Opacidade e Transparência:
+- `opacity`: Define a opacidade de um elemento.
+
+## Propriedades de Visibilidade:
+- `visibility`: Controla a visibilidade de um elemento (visível ou oculto).
 
 ## Propriedades de Filtros de Cores:
 - `filter`: Aplica efeitos visuais (por exemplo, desfoque, saturação, brilho) em um elemento.
+- `backdrop-filter`: Aplica efeitos visuais no plano de fundo de um elemento.
 
-## Propriedades de Efeitos de Visibilidade e Opacidade:
-- `visibility`: Define a visibilidade de um elemento.
-- `opacity`: Define a opacidade de um elemento.
-- `backdrop-filter`: Aplica um filtro de efeitos visuais no plano de fundo de um elemento.
+## Propriedades de Comportamento do Mouse e Seleção de Texto:
+- `scroll-behavior`: Controla a animação de rolagem ao clicar em links para a própria página.
+- `cursor`: Define o tipo de cursor do mouse sobre o elemento.
+- `caret-color`: Define a cor do cursor em elementos editáveis, como `input` e `textarea`.
+- `accent-color`: Define a cor de certos elementos, como `input` e `progress`.
+- `pointer-events`: Controla a interação do mouse com um elemento.
+- `user-select`: Controla a seleção de texto em um elemento.
+
+## Propriedades de Dimensionamento e Redimensionamento:
+- `resize`: Define se um elemento pode ser redimensionado pelo usuário.
+- `clip-path`: Permite recortar um elemento no formato desejado.
+
+## Propriedades de Pseudoelementos:
+- `content`: Insere um conteúdo antes ou depois de um elemento usando os pseudoelementos `::before` e `::after`.
+
+## Propriedades de Contadores:
+- `counter-reset`: Cria ou reseta um contador CSS.
+- `counter-increment`: Incrementa ou decrementa um contador CSS.
+
+## Propriedades de Alinhamento Vertical:
+- `vertical-align`: Especifica o alinhamento vertical de um elemento inline.
+
+## Propriedades de Fragmentação:
+- `box-decoration-break`: Especifica como as propriedades `box-shadow`, `margin`, `border`, `border-image`, `padding`, `background` e `clip-path` são aplicadas quando o container é fragmentado.
+
+## Propriedades de Mesclagem:
+- `mix-blend-mode`: Especifica como um elemento deve se mesclar com o fundo do elemento pai.
+
+## Propriedades de Dimensionamento de Caixa:
+- `box-sizing`: Especifica como o tamanho total de um elemento é calculado, incluindo o preenchimento e a borda.
