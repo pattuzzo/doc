@@ -79,38 +79,31 @@
 - Linguagem de Baixo Nível: uma linguagem de programação que se aproxima da linguagem de máquina, como o Assembly.<br>
 - Linguagem de Máquina: a linguagem de máquina é composta pelos dígitos 1 e 0. A combinação desses números formam bytes, que definidos, formam as instruções internas do processador.</p>
 </article>
-<br>
 <article>
     <h2>Algoritmo:</h2>
     <p>Um algoritmo é formado por um ou mais passos lógicos que visa a obtenção de um resultado. São exemplos de algoritmos as operações aritméticas, onde se segue regras para a realização de cálculos matemáticos.</p>
 </article>
-<br>
 <article>
     <h2>Palavras Reservadas:</h2>
     <p>Palavras reservadas funcionam como blocos de construção e estruturam as linguagens de programação. São palavras reservadas para uso pela linguagem, portanto não podem ser utilizadas para a criação de variáveis ou funções.</p>
 </article>
-<br>
 <article>
     <h2>Sintaxe e Semântica:</h2>
     <p>A sintaxe define um conjunto de regras que visa o uso correto das palavras reservadas na criação de código. Depois do código ser escrito, uma verificação é feita para checar se a sintaxe está de acordo com o esperado. <br>
     A semântica trata-se do significado agregado às palavras reservadas da linguagem e a relação que possuem entre si.</p>
 </article>
-<br>
 <article>
     <h2>Código-fonte:</h2>
     <p>O código-fonte é a versão do código em seu estado puro, formado por algoritmos e estruturado utilizando as palavras reservadas da linguagem.</p>
 </article>
-<br>
 <article>
     <h2>Pseudocódigo:</h2>
     <p>Pseudocódigo é uma forma de escrever algoritmos utilizando uma linguagem de programação de alto nível, porém de maneira mais informal e com uma estrutura mais próxima da linguagem humana. Ele é utilizado para descrever a lógica de um programa, sem a necessidade de se preocupar com a sintaxe específica de uma determinada linguagem de programação.</p>
 </article>
-<br>
 <article>
     <h2>Fluxograma:</h2>
     <p>O fluxograma é uma ferramenta gráfica que é utilizada para representar um processo ou um conjunto de ações de forma visual e clara. Ele é composto por símbolos padronizados que representam as etapas do processo e setas que mostram a sequência em que essas etapas devem ser executadas.</p>
 </article>
-<br>
 <article>
     <h2>Paradigmas de Programação</h2>
     <p>Paradigmas de Programação são formas de classificar as linguagens de programação baseando em suas caracteristícas e funcionalidades. As linguagens podem ser definidas e agrupadas em diferentes paradigmas e possuir mais de um paradigma.</p>
@@ -126,28 +119,23 @@
     <h4>Programação Procedural</h4>
     <p>A programação procedural é uma abordagem baseada em procedimentos ou funções, que são chamados em uma sequência lógica para realizar tarefas específicas. Em outras palavras, a programação procedural é uma forma de programar que permite que o código seja organizado em módulos que podem ser chamados várias vezes durante a execução do programa. É utilizada em linguagens como C e Pascal e é uma abordagem bastante comum em projetos de programação de médio a grande porte.</p>
 </article>
-<br>
 <article>
     <h2>Depurador</h2>
     O depurador é um programa que analisa o código-fonte e verifica a existência de inconsistências (erros) nas intruções, como palavras reservadas usadas de forma incorreta.
 </article>
-<br>
 <article>
     <h2>Interpretador e Compilador:</h2>
     <p>Tanto o interpretador quanto o compilador são programas que analisam e traduzem o código-fonte de uma linguagem de programação de alto nível para a linguagem de máquina. Geralmente uma linguagem de programação é interpretada ou compilada, mas há casos onde ocorre a compilação para uma linguagem intermediária e depois a interpretação para a linguagem de máquina.</p>
     <p>A diferença entre o interpretador e o compilador, é que o interpretador traduz e executa a cada linha de instrução, perdendo sua tradução anterior; enquanto o compilador traduz todas as instruções primeiro e depois executa, salvando a tradução.</p>
 </article>
-<br>
 <article>
     <h2>Comentários:</h2>
     Comentários em um código-fonte servem para descrever trechos de código para facilitar o seu entendimento e sua posterior manutenção, pelo próprio programador ou por outro.
 </article>
-<br>
 <article>
     <h2>Escopo:</h2>
     O escopo são áreas do código e delimitam até onde certas instruções são "visíveis", como variáveis e funções.
 </article>
-<br>
 <article>
     <h2>Variáveis:</h2>
     <p>Variáveis, em arquitetura de computadores, são etiquetas (nomes) que estão associadas a um endereço na memória principal (nos computadores comuns é a memória RAM); esta é uma definição mais técnica do que é uma variável, veremos agora uma definição mais tangível.<br>
@@ -185,7 +173,6 @@
     conjunto - representa uma coleção de dados sem repetição
     objeto - representa uma abstração de um objeto, formado por atributos, valores e métodos
 </article>
-<br>
 <article>
     <h2>Estruturas de dados:</h2>
     <p>Estruturas de dados são maneiras de organizar e armazenar dados de forma eficiente, para que possam ser acessados e manipulados de maneira rápida e eficaz. Há vários tipos de estruturas de dados, cada uma com suas próprias vantagens e desvantagens.</p>
@@ -203,7 +190,6 @@
     <h4>Grafo</h4>
     <p>Grafo é uma estrutura de dados que representa um conjunto de objetos conectados por meio de arestas. Os grafos podem ser direcionados ou não direcionados e podem ter pesos associados às suas arestas.</p>
 </article>
-<br>
 <article>
     <h2>Caractere e Sequência de Escape:</h2>
     <p>Um caractere de escape é um caractere utilizado para alterar o significado do caractere sucessor a ele; no JavaScript e em algumas outras linguagens, este caractere é a barra invertida (\). Já sequência de escape se refere ao subconjunto de caracteres com o caractere de escape que tem o seu significado modificado.</p>
@@ -212,7 +198,6 @@
     \t - insere uma tabulação
     \n - insere uma quebra de linha
 </article>
-<br>
 <article>
     <h2>Entrada e Saída de Dados:</h2>
     Entrada e saída de dados se refere ao processo de captura ou inserção e de transmissão ou exibição de dados. Eletrônicos podem fazê-lo utilizando sensores ou paineis de controle, e na programação temos algumas funções básicas, como:
@@ -222,7 +207,6 @@
 
 <p>Exemplo em Python.</p>
 </article>
-<br>
 <article>
     <h2>Operadores:</h2>
     <p>Operadores agem como funções e operam sobre operandos (valores) realizando operações(cálculos, comparações etc).<p>
@@ -239,7 +223,6 @@
     Operador binário - possui 2 operandos
     Operador ternário - possui 3 operandos
 </article>
-<br>
 <article>
     <h2>Estruturas de Condição:</h2>
     <p>Estruturas condicionais são estruturas que controlam o fluxo de execução de um programa, permitindo a bifurcação no fluxo de execução; ou seja, permite o controle e permite a execução de trechos de códigos diferentes dependendo da condição.</p>
@@ -279,7 +262,6 @@
             instrução
     }
 </article>
-<br>
 <article>
     <h2>Estruturas de Repetição:</h2>
     <p>Estruturas de repetição são estruturas que permitem a repetição de instruções.<p>
@@ -319,7 +301,6 @@
         instrução
     }
 </article>
-<br>
 <article>
     <h2>Funções e Parâmetros:</h2>
     <p>Funções são sub-rotinas, ações programadas para execução conforme demanda, tendo ou não parâmetros especificados na sua chamada; formada por um conjunto de instruções, elas realizam tarefas pré-determinadas.
@@ -328,7 +309,6 @@
     <h4>Funções Built-in:</h4>
     <p>Funções "Built-in" são funções embutidas na linguagem, prontas para uso pelo programador, como funções de entrada e saída e conversores de tipos de dados, entre outras.</p>
 </article>
-<br>
 <article>
     <h2>Classes:</h2>
     <p>Uma classe é um modelo de objeto que define um conjunto de atributos e métodos que descrevem o comportamento e as características de um objeto. Os atributos representam as propriedades ou características do objeto e os métodos são as ações que o objeto pode executar.</p>
@@ -379,7 +359,6 @@
     <p>O construtor é um método especial em uma classe que é executado automaticamente quando um objeto é criado a partir dessa classe. O objetivo do construtor é inicializar os atributos do objeto com valores específicos ou realizar outras ações necessárias quando um objeto é criado.</p>
 </article>
 </article>
-<br>
 <article>
     <h2>Testes:</h2>
     <p>Testes em programação são uma prática fundamental para garantir a qualidade e confiabilidade do software desenvolvido. Os testes são usados para verificar se o código funciona conforme o esperado, identificar erros e garantir que as alterações no código não causem regressões ou problemas inesperados.</p>
@@ -392,18 +371,15 @@
     <h3>Teste de Aceitação</h3>
     <p>Os testes de aceitação são usados para testar se o sistema atende aos requisitos do usuário e se está pronto para ser entregue. Eles geralmente envolvem a execução de testes em um ambiente de produção simulado para garantir que o sistema esteja pronto para o uso.</p>
 </article>
-<br>
 <article>
     <h2>Frameworks:</h2>
     <p>Frameworks são pedaços de códigos que oferecem funcionalidades genéricas.</p>
 </article>
-<br>
 <article>
     <h2>Bibliotecas:</h2>
     <p>Biblioteca é um conjunto de código pré-escrito que pode ser usado para adicionar funcionalidades ao software. Elas são projetadas para serem reutilizáveis, o que significa que podem ser incluídas em diferentes projetos para realizar tarefas específicas de maneira mais fácil e eficiente.</p>
     <p>As bibliotecas geralmente incluem uma coleção de funções e métodos que realizam tarefas comuns de programação, como manipulação de strings, conexão com bancos de dados, geração de gráficos, entre outros. As bibliotecas podem ser escritas em várias linguagens de programação, incluindo Python, Java, JavaScript, C++, entre outras.</p>
 </article>
-<br>
 <article>
     <h2>Existem muitas linguagens de programação disponíveis atualmente, cada uma com suas próprias vantagens e desvantagens. Algumas das linguagens de programação mais populares e seus usos mais comuns são:</h2>
     <h3>Python</h3>
