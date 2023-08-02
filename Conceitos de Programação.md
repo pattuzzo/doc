@@ -2,9 +2,9 @@
 
 ## Sumário:
 - [Linguagem de Programação](#linguagem-de-programação)
-    - [Linguagem de Alto Nível](#linguagem-de-alto-nível)
-    - [Linguagem de Baixo Nível](#linguagem-de-baixo-nível)
-    - [Linguagem de Máquina](#linguagem-de-máquina)
+    - Linguagem de Alto Nível
+    - Linguagem de Baixo Nível
+    - Linguagem de Máquina
 - [Algoritmo](#algoritmo)
 - [Palavras Reservadas](#palavras-reservadas)
 - [Sintaxe e Semântica](#sintaxe-e-semântica)
@@ -23,10 +23,10 @@
 - [Escopo](#escopo)
 - [Variáveis](#variáveis)
 - [Sistema de Tipos](#sistema-de-tipos)
-    - [Tipagem estática](#tipagem-estática)
-    - [Tipagem dinâmica](#tipagem-dinâmica)
-    - [Tipagem forte](#tipagem-forte)
-    - [Tipagem fraca](#tipagem-fraca)
+    - Tipagem Estática
+    - Tipagem Dinâmica
+    - Tipagem Forte
+    - Tipagem Fraca
 - [Tipos de Dados](#tipos-de-dados)
     - [Tipos Primitivos](#tipos-primitivos)
     - [Tipos Compostos](#tipos-compostos)
@@ -41,7 +41,17 @@
 - [Entrada e Saída de Dados](#entrada-e-saída-de-dados)
 - [Operadores](#operadores)
 - [Estruturas de Condição](#estruturas-de-condição)
+    - Estrutura SE
+    - Estrutura SENÃO SE
+    - Estrutura SENÃO
+    - Estrutura SE, SENÃO
+    - Estrutura SWITCH
 - [Estruturas de Repetição](#estruturas-de-repetição)
+    - Estrutura ENQUANTO
+    - Estrutura FAÇA-ENQUANTO
+    - Estrutura PARA
+    - Estrutura PARA EM
+    - Estrutura PARA DE
 - [Funções e Parâmetros](#funções-e-parâmetros)
     - [Funções Built-in](#funções-built-in)
 - [Classes e Objetos](#classes-e-objetos)
