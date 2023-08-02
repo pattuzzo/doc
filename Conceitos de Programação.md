@@ -2,6 +2,75 @@
 
 ## Sumário:
 - [Linguagem de Programação](#linguagem-de-programação)
+    - [Linguagem de Alto Nível](#linguagem-de-alto-nível)
+    - [Linguagem de Baixo Nível](#linguagem-de-baixo-nível)
+    - [Linguagem de Máquina](#linguagem-de-máquina)
+- [Algoritmo](#algoritmo)
+- [Palavras Reservadas](#palavras-reservadas)
+- [Sintaxe e Semântica](#sintaxe-e-semântica)
+- [Código-fonte](#código-fonte)
+- [Pseudocódigo](#pseudocódigo)
+- [Fluxograma](#fluxograma)
+- [Paradigmas de Programação](#paradigmas-de-programação)
+    - [Programação Imperativa](#programação-imperativa)
+    - [Programação Orientada a Objetos](#programação-orientada-a-objetos)
+    - [Programação Funcional](#programação-funcional)
+    - [Programação Declarativa](#programação-declarativa)
+    - [Programação Procedural](#programação-procedural)
+- [Depurador](#depurador)
+- [Interpretador e Compilador](#interpretador-e-compilador)
+- [Comentários](#comentários)
+- [Escopo](#escopo)
+- [Variáveis](#variáveis)
+- [Sistema de Tipos](#sistema-de-tipos)
+    - [Tipagem estática](#tipagem-estática)
+    - [Tipagem dinâmica](#tipagem-dinâmica)
+    - [Tipagem forte](#tipagem-forte)
+    - [Tipagem fraca](#tipagem-fraca)
+- [Tipos de Dados](#tipos-de-dados)
+    - [Tipos Primitivos](#tipos-primitivos)
+    - [Tipos Compostos](#tipos-compostos)
+- [Estruturas de Dados](#estruturas-de-dados)
+    - [Array](#array)
+    - [Lista encadeada](#lista-encadeada)
+    - [Pilha](#pilha)
+    - [Fila](#fila)
+    - [Árvore](#árvore)
+    - [Grafo](#grafo)
+- [Caractere e Sequência de Escape](#caractere-e-sequência-de-escape)
+- [Entrada e Saída de Dados](#entrada-e-saída-de-dados)
+- [Operadores](#operadores)
+- [Estruturas de Condição](#estruturas-de-condição)
+    - [Estrutura SE](#estrutura-se)
+    - [Estrutura SENÃO SE](#estrutura-senão-se)
+    - [Estrutura SENÃO](#estrutura-senão)
+    - [Estrutura SE, SENÃO](#estrutura-se-senão)
+    - [Estrutura SWITCH](#estrutura-switch)
+- [Estruturas de Repetição](#estruturas-de-repetição)
+    - [Estrutura ENQUANTO](#estrutura-enquanto)
+    - [Estrutura FAÇA-ENQUANTO](#estrutura-faça-enquanto)
+    - [Estrutura PARA](#estrutura-para)
+    - [Estrutura PARA EM](#estrutura-para-em)
+    - [Estrutura PARA DE](#estrutura-para-de)
+- [Funções e Parâmetros](#funções-e-parâmetros)
+    - [Funções Built-in](#funções-built-in)
+- [Classes e Objetos](#classes-e-objetos)
+- [Programação Orientada a Objetos](#programação-orientada-a-objetos)
+- [Atributos](#atributos)
+- [Métodos](#métodos)
+- [A Palavra "This"](#a-palavra-this)
+- [Construtores](#construtores)
+- [Encapsulamento](#encapsulamento)
+- [Herança](#herança)
+- [Polimorfismo](#polimorfismo)
+- [Testes](#testes)
+    - [Teste Unitário](#teste-unitário)
+    - [Teste de Integração](#teste-de-integração)
+    - [Teste Funcional](#teste-funcional)
+    - [Teste de Aceitação](#teste-de-aceitação)
+- [Frameworks](#frameworks)
+- [Bibliotecas](#bibliotecas)
+- [Linguagens de Programação](#linguagens-de-programação)
 
 <article>
 <h2>Linguagem de Programação:</h2>
@@ -314,14 +383,13 @@
 <article>
     <h2>Testes:</h2>
     <p>Testes em programação são uma prática fundamental para garantir a qualidade e confiabilidade do software desenvolvido. Os testes são usados para verificar se o código funciona conforme o esperado, identificar erros e garantir que as alterações no código não causem regressões ou problemas inesperados.</p>
-    <h3>Exemplos de Testes:</h3>
-    <h4>Teste Unitário</h4>
+    <h3>Teste Unitário</h3>
     <p>Os testes unitários são usados para testar pequenas partes de código, como funções ou métodos individuais. Eles são escritos em conjunto com o código que estão testando e geralmente envolvem a criação de casos de teste para verificar se o resultado é o esperado.</p>
-    <h4>Teste de Integração</h4>
+    <h3>Teste de Integração</h3>
     <p>Os testes de integração são usados para testar a integração de diferentes partes do sistema. Eles geralmente envolvem a execução de testes em vários componentes em conjunto para garantir que eles funcionem juntos sem problemas.</p>
-    <h4>Teste Funcional</h4>
+    <h3>Teste Funcional</h3>
     <p>Os testes funcionais são usados para testar o comportamento do sistema em relação às suas especificações funcionais. Eles geralmente envolvem a criação de casos de teste que reproduzem cenários reais de uso do sistema.</p>
-    <h4>Teste de Aceitação</h4>
+    <h3>Teste de Aceitação</h3>
     <p>Os testes de aceitação são usados para testar se o sistema atende aos requisitos do usuário e se está pronto para ser entregue. Eles geralmente envolvem a execução de testes em um ambiente de produção simulado para garantir que o sistema esteja pronto para o uso.</p>
 </article>
 <br>
