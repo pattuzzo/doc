@@ -149,8 +149,6 @@ Os tipos básicos em TypeScript representam os tipos primitivos do JavaScript e 
 
 O tipo `number` é usado para representar números inteiros ou de ponto flutuante. Em TypeScript, todos os números são do tipo `number`, independentemente de serem inteiros ou de ponto flutuante.
 
-Exemplo:
-
 ```typescript
 let idade: number = 30;
 let altura: number = 1.75;
@@ -160,8 +158,6 @@ let altura: number = 1.75;
 
 O tipo `string` é usado para representar sequências de caracteres (texto). As strings devem ser declaradas entre aspas simples ou duplas.
 
-Exemplo:
-
 ```typescript
 let nome: string = "João";
 let frase: string = 'Olá, mundo!';
@@ -170,8 +166,6 @@ let frase: string = 'Olá, mundo!';
 ### Boolean
 
 O tipo `boolean` é usado para representar valores verdadeiros ou falsos (true ou false).
-
-Exemplo:
 
 ```typescript
 let isAdmin: boolean = true;
@@ -188,8 +182,6 @@ O tipo `null` é usado para representar um valor nulo (aus
 
 ência de valor). Ele é frequentemente usado para indicar que uma variável não possui um valor válido.
 
-Exemplo:
-
 ```typescript
 let valor: number | null = null;
 ```
@@ -198,8 +190,6 @@ let valor: number | null = null;
 
 O tipo `undefined` é usado para representar um valor não definido. Quando uma variável é declarada, mas não inicializada, ela possui o valor `undefined`.
 
-Exemplo:
-
 ```typescript
 let variavelIndefinida: undefined = undefined;
 ```
@@ -207,8 +197,6 @@ let variavelIndefinida: undefined = undefined;
 ### Void
 
 O tipo `void` é usado principalmente para representar que uma função não possui um valor de retorno. Quando uma função é declarada com o tipo `void`, ela não pode retornar nenhum valor.
-
-Exemplo:
 
 ```typescript
 function exibirMensagem(): void {
@@ -219,8 +207,6 @@ function exibirMensagem(): void {
 ### Never
 
 O tipo `never` é usado para representar um valor que nunca ocorre. Geralmente, é usado para funções que lançam exceções ou entram em loops infinitos, ou para funções que nunca retornam.
-
-Exemplo:
 
 ```typescript
 function lancaExcecao(): never {
@@ -236,18 +222,15 @@ Além dos tipos básicos e especiais, TypeScript também oferece tipos compostos
 
 O tipo `object` é usado para representar qualquer valor não primitivo. Isso inclui objetos, arrays, funções e qualquer outra coisa que não seja um tipo primitivo.
 
-Exemplo:
-
 ```typescript
 let pessoa: object = { nome: "Alice", idade: 25 };
 let numeros: object = [1, 2, 3, 4, 5];
+let carro: {marca: string, ano: number} = {marca: "Ford", ano: 2001} // sintaxe alternativa
 ```
 
 ### Array
 
 O tipo `array` é usado para representar uma lista de valores de um determinado tipo. Podemos usar a sintaxe `tipo[]` ou `Array<tipo>` para definir um array.
-
-Exemplo:
 
 ```typescript
 let numeros: number[] = [1, 2, 3, 4, 5];
@@ -258,8 +241,6 @@ let nomes: Array<string> = ["Alice", "Bob", "Carol"];
 
 Uma tupla é um tipo de array com um número fixo de elementos, onde cada elemento pode ter um tipo diferente. As tuplas são definidas usando colchetes e especificando os tipos dos elementos separados por vírgulas.
 
-Exemplo:
-
 ```typescript
 let pessoa: [string, number] = ["Alice", 25];
 ```
@@ -267,8 +248,6 @@ let pessoa: [string, number] = ["Alice", 25];
 ### Enum
 
 Enum é um tipo que permite associar valores a um conjunto de nomes amigáveis. Isso torna o código mais legível e fácil de entender.
-
-Exemplo:
 
 ```typescript
 enum DiaDaSemana {
@@ -292,8 +271,6 @@ Os tipos genéricos permitem criar componentes reutilizáveis e flexíveis, capa
 
 O tipo `any` é usado quando o tipo de uma variável ou valor é desconhecido ou quando estamos trabalhando com código JavaScript existente e não queremos fazer uma tipagem rígida.
 
-Exemplo:
-
 ```typescript
 let valor: any = 42;
 valor = "Olá";
@@ -303,8 +280,6 @@ valor = true;
 ### Unknown
 
 O tipo `unknown` é semelhante ao tipo `any`, mas mais seguro. O tipo `unknown` exige que você faça uma verificação de tipo ou uma conversão explícita antes de trabalhar com o valor.
-
-Exemplo:
 
 ```typescript
 let valor: unknown = 42;
@@ -323,8 +298,6 @@ Além dos tipos básicos e compostos, TypeScript oferece uma série de tipos ava
 
 O tipo literal permite definir um tipo que representa um valor específico. Isso é útil em situações onde se quer limitar o conjunto de valores possíveis para uma variável ou parâmetro.
 
-Exemplo:
-
 ```typescript
 let cor: "vermelho" | "azul" | "verde";
 cor = "vermelho"; // Válido
@@ -334,8 +307,6 @@ cor = "amarelo"; // Inválido, pois "amarelo" não é um valor permitido
 ### Interface
 
 Interfaces são uma forma de definir contratos em TypeScript. Elas podem ser usadas para descrever a estrutura de um objeto, o formato de uma função e muito mais.
-
-Exemplo:
 
 ```typescript
 interface Pessoa {
@@ -352,8 +323,6 @@ function exibirPessoa(pessoa: Pessoa) {
 
 Os tipos de alias permitem criar um nome personalizado para um tipo existente. Isso é útil para tornar o código mais legível e para reutilizar tipos em várias partes do código.
 
-Exemplo:
-
 ```typescript
 type Coordenada = [number, number];
 
@@ -366,8 +335,6 @@ function moverPara(coord: Coordenada) {
 
 A união de tipos permite que uma variável, parâmetro ou retorno de função possa ter mais de um tipo. Isso é útil quando uma variável pode ter valores de diferentes tipos.
 
-Exemplo:
-
 ```typescript
 function exibirValor(valor: string | number) {
   console.log(`O valor é: ${valor}`);
@@ -377,8 +344,6 @@ function exibirValor(valor: string | number) {
 ### Intersecção de Tipos
 
 A intersecção de tipos permite combinar vários tipos em um único tipo, criando um novo tipo que possui todas as propriedades e características dos tipos originais.
-
-Exemplo:
 
 ```typescript
 interface Animal {
@@ -400,8 +365,6 @@ function mover(pato: PatoVoador) {
 ### Inferência de Tipos
 
 A inferência de tipos é uma característica do TypeScript que permite que o compilador deduza o tipo de uma variável com base no valor atribuído a ela.
-
-Exemplo:
 
 ```typescript
 let numero = 42; // TypeScript inferirá que 'numero' é do tipo 'number'
