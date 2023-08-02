@@ -306,9 +306,16 @@ cor = "amarelo"; // Inválido, pois "amarelo" não é um valor permitido
 
 ### Interface
 
-Interfaces são uma forma de definir contratos em TypeScript. Elas podem ser usadas para descrever a estrutura de um objeto, o formato de uma função e muito mais.
+Interfaces são estruturas que descrevem a forma (o formato) que um objeto deve ter em TypeScript. Elas podem ser usadas para descrever a estrutura de um objeto, o formato de uma função e muito mais.
 
 ```typescript
+interface Carro {
+  marca: string;
+  ano: number;
+}
+
+let carro: Carro = {marca: "BMW", ano: 2016}
+
 interface Pessoa {
   nome: string;
   idade: number;
