@@ -6,9 +6,9 @@ Este repositório é uma coleção abrangente de documentações para várias te
 
 Atualmente, nossa documentação abrange três categorias de tecnologias:
 
-- [Linguagens de Marcação]()
-- [Linguagens de Estilização]()
-- [Linguagens de Programação](/Linguagens de Programação)
+- [Linguagens de Marcação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Marcação)
+- [Linguagens de Estilização](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Estilização)
+- [Linguagens de Programação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação)
 
 
 - HTML/CSS
