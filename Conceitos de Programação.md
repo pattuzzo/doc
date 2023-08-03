@@ -203,8 +203,10 @@
     <h2>Entrada e Saída de Dados:</h2>
     Entrada e saída de dados se refere ao processo de captura ou inserção e de transmissão ou exibição de dados. Eletrônicos podem fazê-lo utilizando sensores ou paineis de controle, e na programação temos algumas funções básicas, como:
     
-    input() - função de captura
-    print() - função de exibição
+```python
+input() - função de captura
+print() - função de exibição
+```
 
 <p>Exemplo em Python.</p>
 </article>
@@ -250,7 +252,9 @@ else {
 <p>estrutura SE, SENÃO: identificada pelo símbolo (?), possui uma condição a ser analisada e um trecho de código a executar se a condição for verdadeira e se a condição for falsa.</p>
 <p>A condição na estrutura SE, SENÃO é analisada e SE for verdadeira, a primeira instrução após o símbolo (?) é executada; SENÃO, a última instrução é executada.</p>
 
+```javascript
     (condição) ? instrução : instrução
+```
 
 <br>
 <p>estrutura SWITCH: identificada pela palavra reservada (switch), possui um valor de caso a ser comparado em sua estrutura interna.</p>
@@ -292,17 +296,19 @@ do {
 <p>estrutura PARA: identificada pela palavra reservada (FOR), possui uma condição a ser analisada e um trecho de código a executar enquanto a condição é verdadeira.</p>
 <p>Para a variável interna, enquanto a condição é verdadeira, a instrução interna é executada e a variável interna é modificada:</p>
 
-    for (variável interna, condição, manipulação da variável interna) {
-        instrução
-    }
+```javascript
+for (variável interna, condição, manipulação da variável interna) {
+    instrução
+}
+```
 <br>
 <p>estrutura PARA EM: identificada pela palavra reservada (FOR IN).</p>
 <p>Para cada índice de uma lista, a instrução interna é executada:</p>
 
 ```javascript
-    for (index in lista) {
-        instrução
-    }
+for (index in lista) {
+    instrução
+}
 ```
 <br>
 <p>estrutura PARA DE: identificada pela palavra reservada (FOR OF).</p>
