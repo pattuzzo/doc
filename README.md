@@ -7,15 +7,19 @@ Este repositório é uma coleção abrangente de documentações para várias te
 Atualmente, nossa documentação abrange três categorias de tecnologias:
 
 - [Linguagens de Marcação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Marcação)
+  - [HTML](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Marcação/HTML)
+  - [XML - Em Planejamento]()
 - [Linguagens de Estilização](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Estilização)
+  - [CSS](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Estilização/CSS)
+  - [SASS - Em Planejamento]()
+  - [LESS - Em Planejamento]()
 - [Linguagens de Programação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação)
-
-
-- HTML/CSS
-- JavaScript
-- Python
-- C
-- Java
+  - [JavaScript](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/JavaScript)
+  - [TypeScript](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/TypeScript)
+  - [C](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/C)
+  - [Java](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Java)
+  - [Python](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Python)
+  - [Kotlin - Em Planejamento]()
 
 ## Como Contribuir
 
