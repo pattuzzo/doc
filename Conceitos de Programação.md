@@ -298,9 +298,11 @@
 <p>estrutura PARA DE: identificada pela palavra reservada (FOR OF).</p>
 <p>Para cada valor de uma lista, a instrução interna é executada:</p>
 
+    ```
     for (valor of lista) {
         instrução
     }
+    ```
 </article>
 <article>
     <h2>Funções e Parâmetros:</h2>
