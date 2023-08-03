@@ -375,7 +375,7 @@ for (valor of lista) {
 
 <article>
     <h3>Polimorfismo</h3>
-    <p>O construtor é um método especial em uma classe que é executado automaticamente quando um objeto é criado a partir dessa classe. O objetivo do construtor é inicializar os atributos do objeto com valores específicos ou realizar outras ações necessárias quando um objeto é criado.</p>
+    <p>Polimorfismo é um conceito em programação orientada a objetos que permite que objetos de diferentes classes sejam tratados de maneira uniforme, desde que esses objetos possuam uma interface comum. Em outras palavras, é a capacidade de uma classe se comportar de maneira diferente com base no contexto em que é usada.</p>
 </article>
 </article>
 <article>
