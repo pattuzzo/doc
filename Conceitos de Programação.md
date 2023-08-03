@@ -253,7 +253,7 @@ else {
 <p>A condição na estrutura SE, SENÃO é analisada e SE for verdadeira, a primeira instrução após o símbolo (?) é executada; SENÃO, a última instrução é executada.</p>
 
 ```javascript
-    (condição) ? instrução : instrução
+(condição) ? instrução : instrução
 ```
 
 <br>
