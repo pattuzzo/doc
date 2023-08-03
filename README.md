@@ -11,15 +11,15 @@ Atualmente, nossa documentação abrange três categorias de tecnologias:
   - [XML - Em Planejamento]()
 - [Linguagens de Estilização](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Estilização)
   - [CSS](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Estilização/CSS)
-  - [SASS - Em Planejamento]()
   - [LESS - Em Planejamento]()
+  - [SASS - Em Planejamento]()
 - [Linguagens de Programação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação)
+  - [C](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/C)
+  - [Kotlin - Em Planejamento]()
+  - [Java](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Java)
   - [JavaScript](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/JavaScript)
   - [TypeScript](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/TypeScript)
-  - [C](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/C)
-  - [Java](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Java)
   - [Python](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Python)
-  - [Kotlin - Em Planejamento]()
 
 ## Como Contribuir
 
