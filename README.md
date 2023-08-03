@@ -4,7 +4,7 @@ Este repositório é uma coleção abrangente de documentações para várias te
 
 ## Tecnologias Disponíveis
 
-Atualmente, nossa documentação abrange três categorias de tecnologias:
+Atualmente, nossa documentação abrange quatro categorias de tecnologias:
 
 - [Linguagens de Marcação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Marcação)
   - [HTML](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Marcação/HTML)
@@ -16,10 +16,13 @@ Atualmente, nossa documentação abrange três categorias de tecnologias:
 - [Linguagens de Programação](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação)
   - [C](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/C)
   - [Kotlin - Em Planejamento]()
+  - [Lua - Em Planejamento]()
   - [Java](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Java)
   - [JavaScript](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/JavaScript)
   - [TypeScript](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/TypeScript)
   - [Python](https://github.com/pattuzzoj/documentacao/tree/main/Linguagens%20de%20Programação/Python)
+- [Linguagem de Consulta](https://github.com/pattuzzoj/documentacao/tree/main/Linguagem%20de%20Consulta)
+  - [SQL - Em Planejamento]()
 
 ## Como Contribuir
 
