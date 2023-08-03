@@ -71,7 +71,7 @@
 - [Frameworks](#frameworks)
 - [Bibliotecas](#bibliotecas)
 - [API](#api)
-- [Linguagens de Programação](#linguagens-de-programação)
+- [Linguagens e Suas Aplicações](#linguagens-e-suas-aplicações)
 
 <article>
 <h2>Linguagem de Programação:</h2>
@@ -387,7 +387,7 @@
     <p>Assim, ao utilizar uma API, um sistema pode enviar solicitações a outro sistema, obter as respostas e interagir com os recursos disponibilizados por esse sistema externo. Essa comunicação por meio de APIs é fundamental para permitir a integração de diferentes sistemas, facilitando a troca de informações e recursos entre eles.</p>
 </article>
 <article>
-    <h2>Existem muitas linguagens de programação disponíveis atualmente, cada uma com suas próprias vantagens e desvantagens. Algumas das linguagens de programação mais populares e seus usos mais comuns são:</h2>
+    <h2>Linguagens e Suas Aplicações:</h2>
     <h3>Python</h3>
     <p>Python é uma linguagem de programação de uso geral, usada para desenvolvimento web, científico, de inteligência artificial, análise de dados, automação de tarefas, entre outros. É uma das linguagens de programação mais populares e de fácil aprendizado.</p>
     <h3>Java</h3>
