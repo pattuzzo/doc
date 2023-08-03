@@ -234,6 +234,7 @@
     <br>
     <p>A condição na estrutura SE é analisada e SE for verdadeira, a instrução interna é executada; SENÃO, a condição na estrutura SENÃO SE é analisada e SE for verdadeira, a instrução interna é executada; SENÃO, a instrução interna da estrutura SENÃO é executada, em último caso.</p>
 
+    ```javascript
     if (condição) {
         instrução
     }
@@ -243,6 +244,7 @@
     else {
         instrução
     }
+    ```
 
 <br>
 <p>estrutura SE, SENÃO: identificada pelo símbolo (?), possui uma condição a ser analisada e um trecho de código a executar se a condição for verdadeira e se a condição for falsa.</p>
@@ -254,6 +256,7 @@
 <p>estrutura SWITCH: identificada pela palavra reservada (switch), possui um valor de caso a ser comparado em sua estrutura interna.</p>
 <p>Se um dos valores internos corresponder ao caso, a instrução interna desse valor é executada; senão, a instrução padrão é executada.</p>
 
+    ```javascript
     switch (caso) {
         valor:
             instrução
@@ -262,6 +265,7 @@
         default:
             instrução
     }
+    ```
 </article>
 <article>
     <h2>Estruturas de Repetição:</h2>
@@ -269,16 +273,20 @@
     <p>estrutura ENQUANTO: identificada pela palavra reservada (WHILE), possui uma condição a ser analisada e um trecho de código a executar enquanto a condição é verdadeira.</p>
     <p>A condição é analisada, se a condição é verdadeira, a instrução interna é executada e enquanto a condição for verdadeira a instrução se repetirá:</p>
 
+    ```javascript
     while (condição) {
         instrução
     }
+    ```
 <br>
 <p>estrutura FAÇA-ENQUANTO: identificada pela palavra reservada (DO WHILE), possui uma condição a ser analisada após a primeira execução e executa este mesmo trecho de código enquanto a condição é verdadeira.</p>
 <p>A instrução interna é executada e em seguida analisada a condição; caso a condição seja verdadeira, a instrução é executada novamente, reiniciando o loop:</p>
 
+    ```C
     do {
         instrução
     } while (condição)
+    ```
 
 <br>
 <p>estrutura PARA: identificada pela palavra reservada (FOR), possui uma condição a ser analisada e um trecho de código a executar enquanto a condição é verdadeira.</p>
@@ -298,7 +306,7 @@
 <p>estrutura PARA DE: identificada pela palavra reservada (FOR OF).</p>
 <p>Para cada valor de uma lista, a instrução interna é executada:</p>
 
-    ```
+    ```javascript
     for (valor of lista) {
         instrução
     }
