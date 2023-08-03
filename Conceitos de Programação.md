@@ -70,6 +70,7 @@
     - [Teste de Aceitação](#teste-de-aceitação)
 - [Frameworks](#frameworks)
 - [Bibliotecas](#bibliotecas)
+- [API](#api)
 - [Linguagens de Programação](#linguagens-de-programação)
 
 <article>
@@ -379,6 +380,11 @@
     <h2>Bibliotecas:</h2>
     <p>Biblioteca é um conjunto de código pré-escrito que pode ser usado para adicionar funcionalidades ao software. Elas são projetadas para serem reutilizáveis, o que significa que podem ser incluídas em diferentes projetos para realizar tarefas específicas de maneira mais fácil e eficiente.</p>
     <p>As bibliotecas geralmente incluem uma coleção de funções e métodos que realizam tarefas comuns de programação, como manipulação de strings, conexão com bancos de dados, geração de gráficos, entre outros. As bibliotecas podem ser escritas em várias linguagens de programação, incluindo Python, Java, JavaScript, C++, entre outras.</p>
+</article>
+<article>
+    <h2>API:</h2>
+    <p>API significa Interface de Programação de Aplicativos, um software intermediário que permite que diferentes sistemas se comuniquem e interajam. Ela atua como uma ponte entre um sistema externo e o sistema interno, fornecendo um conjunto de interfaces e protocolos que permitem que os sistemas externos acessem e utilizem funcionalidades, dados ou serviços do sistema interno de forma controlada e segura.</p>
+    <p>Assim, ao utilizar uma API, um sistema pode enviar solicitações a outro sistema, obter as respostas e interagir com os recursos disponibilizados por esse sistema externo. Essa comunicação por meio de APIs é fundamental para permitir a integração de diferentes sistemas, facilitando a troca de informações e recursos entre eles.</p>
 </article>
 <article>
     <h2>Existem muitas linguagens de programação disponíveis atualmente, cada uma com suas próprias vantagens e desvantagens. Algumas das linguagens de programação mais populares e seus usos mais comuns são:</h2>
