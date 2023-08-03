@@ -262,9 +262,9 @@ else {
 
 ```javascript
 switch (caso) {
-    valor:
+    case valor:
         instrução
-    valor:
+    case valor:
         instrução
     default:
         instrução
