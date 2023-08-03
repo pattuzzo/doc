@@ -4,7 +4,12 @@ Este repositório é uma coleção abrangente de documentações para várias te
 
 ## Tecnologias Disponíveis
 
-Atualmente, nossa documentação abrange as seguintes tecnologias:
+Atualmente, nossa documentação abrange três categorias de tecnologias:
+
+- [Linguagens de Marcação]()
+- [Linguagens de Estilização]()
+- [Linguagens de Programação](/Linguagens de Programação)
+
 
 - HTML/CSS
 - JavaScript
