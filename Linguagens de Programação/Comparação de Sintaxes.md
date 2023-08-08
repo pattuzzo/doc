@@ -77,7 +77,8 @@ when (opcao) {
     // code
   }
 } // Kotlin
-
+```
+```python
 if opcao == 1:
   // code
 elif opcao == 2:
@@ -85,7 +86,6 @@ elif opcao == 2:
 else:
   // code
 // Python
-
 ```
 
 ## Declaração de Funções:
