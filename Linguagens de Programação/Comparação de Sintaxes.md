@@ -2,14 +2,25 @@
 
 ## Declaração de Variáveis:
 #### C:
-```c
-tipo nome operador valor  
-int  name    =       5;
+```c  
+int quantidade = 5;
+```
+#### Java:
+```java
+int quantidade = 5;
 ```
 #### JavaScript:
+```javascript
+let quantidade = 5;
+```
 #### TypeScript:
-#### Java:
+```typescript
+let quantidade: number = 5;
+```
 #### Python:
+```python
+quantidade = 5
+```
 
 ## Declaração de Funções:
 #### C:
