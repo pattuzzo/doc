@@ -14,3 +14,7 @@
 
 ## Declaração de Funções:
 ###### C: ```type name_function() {<br>}```
+
+## Título: Código em TypeScript
+```typescript
+name_variable: type = "value"
