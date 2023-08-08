@@ -2,9 +2,10 @@
 
 ## Declaração de Variáveis:
 #### C:
-  ```c
-    int name = 5;
-  ```
+```c
+// tipo nome-da-variável operador-de-atribuição valor  
+int name = 5;
+```
 #### JavaScript:
 #### TypeScript:
 #### Java:
