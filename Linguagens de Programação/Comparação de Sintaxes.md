@@ -25,13 +25,19 @@ quantidade = 5 // Python
 
 ## Estruturas Condicionais:
 ```c
+// C, C++, C#, Java, JavaScript, TypeScript, PHP, Kotlin
+
 if (condicao1) {
   // code
 } else if (condicao2) {
   // code
 } else {
   // code
-} // C, C++, C#, Java, JavaScript, TypeScript, PHP, Kotlin
+}
+```
+
+```python
+# Python
 
 if condicao1:
   // code
@@ -40,7 +46,10 @@ elif condicao2:
 else:
   // code
 // Python
+```
 
+```c
+// C, C++, C#, Java, JavaScript, TypeScript
 
 switch (opcao) {
   case 1:
@@ -52,7 +61,11 @@ switch (opcao) {
   default:
     // code
     break;
-} // C, C++, C#, Java, JavaScript, TypeScript
+}
+```
+
+```php
+// PHP
 
 switch ($opcao) {
   case 1:
@@ -64,7 +77,11 @@ switch ($opcao) {
   default:
     // code
     break;
-} // PHP
+}
+```
+
+```kotlin
+// Kotlin
 
 when (opcao) {
   1 -> {
@@ -76,16 +93,18 @@ when (opcao) {
   else -> {
     // code
   }
-} // Kotlin
+}
 ```
+
 ```python
+# Python
+
 if opcao == 1:
   // code
 elif opcao == 2:
   // code
 else:
   // code
-// Python
 ```
 
 ## Declaração de Funções:
