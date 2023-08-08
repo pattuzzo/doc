@@ -1,6 +1,6 @@
 # Comparação Entre Sintaxes
 
-## Declaração de Variáveis
+## Declaração de Variáveis:
 ###### C: ```c type name_variable = value;```
 ###### JavaScript:
 ```javascript
@@ -9,4 +9,12 @@
 ###### TypeScript:
 ```typescript
   name_variable: type = "value";
+```
+
+
+## Declaração de Funções:
+###### C: ```c
+  type name_function() {
+
+  }
 ```
