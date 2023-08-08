@@ -9,6 +9,14 @@ $quantidade = 5; // PHP
 var quantidade = 5 // Kotlin
 quantidade = 5 // Python
 ```
+C, C++, C#, Java, JavaScript, TypeScript, PHP, Kotlin, Python
+## Tipos de Dados:
+Com certeza! Vou reorganizar a tabela, dando destaque aos tipos de dados e listando as linguagens que os suportam:
+
+| Tipos de Dados                 | Linguagens Suportadas                                            |
+|--------------------------------|------------------------------------------------------------------|
+| **Tipos Inteiros**             | C, C++, C#, Java, Kotlin, Python, PHP                            |
+| **Tipos de Ponto Flutuante**   | C, C++, C#, Java, Kotlin, PHP                                    |
 
 ## Declaração de Funções:
 ```c
@@ -36,38 +44,3 @@ def Soma(x, y):
   return x + y
 // Python
 ```
-
-
-
-#### C:
-```c  
-int quantidade = 5;
-```
-#### Java:
-```java
-int quantidade = 5;
-```
-#### JavaScript:
-```javascript
-let quantidade = 5;
-```
-#### TypeScript:
-```typescript
-let quantidade: number = 5;
-```
-#### Python:
-```python
-quantidade = 5
-```
-
-## Declaração de Funções:
-#### C:
-  ```c
-    void name() {
-
-    }
-  ```
-#### JavaScript:
-#### TypeScript:
-#### Java:
-#### Python:
