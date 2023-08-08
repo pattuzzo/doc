@@ -3,8 +3,8 @@
 ## Declaração de Variáveis:
 #### C:
 ```c
-// tipo nome-da-variável operador-de-atribuição valor  
-int           name               =              5;
+tipo nome operador valor  
+int  name    =       5;
 ```
 #### JavaScript:
 #### TypeScript:
