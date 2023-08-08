@@ -13,4 +13,4 @@
 
 
 ## Declaração de Funções:
-###### C: ```type name_function() {}```
+###### C: ```type name_function() {<br>}```
