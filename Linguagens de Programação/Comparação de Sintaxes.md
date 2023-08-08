@@ -1,9 +1,9 @@
 # Comparação Entre Sintaxes
 
 ## Declaração de Variáveis:
-```c, javascript
-int name = 5;
-let name = 5;
+```
+int name = 5; // C, Java
+let name = 5; // JavaScript
 ```
 
 
