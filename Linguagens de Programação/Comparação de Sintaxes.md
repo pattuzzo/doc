@@ -1,11 +1,5 @@
 # Comparação Entre Sintaxes
 
-<p>C: ```c
-  type name_function() {
-    <br>
-  }
-```
-<p/>
 ## Declaração de Variáveis:
 ###### C: ```c type name_variable = value;```
 ###### JavaScript:
@@ -19,8 +13,4 @@
 
 
 ## Declaração de Funções:
-###### C: ```c
-  type name_function() {
-
-  }
-```
+###### C: ```type name_function() {}```
