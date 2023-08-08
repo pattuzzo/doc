@@ -1,20 +1,23 @@
 # Comparação Entre Sintaxes
 
 ## Declaração de Variáveis:
-###### C: ```c type name_variable = value;```
-###### JavaScript:
-```javascript
-  name_variable = value;
-```
-###### TypeScript:
-```typescript
-  name_variable: type = "value";
-```
-
+#### C:
+  ```c
+    int name = 5;
+  ```
+#### JavaScript:
+#### TypeScript:
+#### Java:
+#### Python:
 
 ## Declaração de Funções:
-###### C: ```type name_function() {<br>}```
+#### C:
+  ```c
+    void name() {
 
-## Título: Código em TypeScript
-```typescript
-name_variable: type = "value"
+    }
+  ```
+#### JavaScript:
+#### TypeScript:
+#### Java:
+#### Python:
