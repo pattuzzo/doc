@@ -142,7 +142,7 @@ fun Soma(x: Int, y: Int): Int {
 }
 ```
 ```python
-// Python
+# Python
 
 def Soma(x, y):
   return x + y
