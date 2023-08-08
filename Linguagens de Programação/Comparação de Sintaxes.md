@@ -1,6 +1,12 @@
 # Comparação Entre Sintaxes
 
 ## Declaração de Variáveis:
+```c, javascript
+int name = 5;
+let name = 5;
+```
+
+
 #### C:
 ```c  
 int quantidade = 5;
