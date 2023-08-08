@@ -9,15 +9,19 @@ $quantidade = 5; // PHP
 var quantidade = 5 // Kotlin
 quantidade = 5 // Python
 ```
-C, C++, C#, Java, JavaScript, TypeScript, PHP, Kotlin, Python
-## Tipos de Dados:
-Com certeza! Vou reorganizar a tabela, dando destaque aos tipos de dados e listando as linguagens que os suportam:
 
-| Tipos de Dados                 | Linguagens Suportadas                                            |
-|--------------------------------|------------------------------------------------------------------|
-| **int**                        | C, C++, C#, Java, Kotlin, Python, PHP                            |
-| **Tipos Inteiros**             | C, C++, C#, Java, Kotlin, Python, PHP                            |
-| **Tipos de Ponto Flutuante**   | C, C++, C#, Java, Kotlin, PHP                                    |
+## Tipos de Dados:
+| Linguagem     | Tipos Inteiros               | Tipos de Ponto Flutuante  | Tipos Booleanos | Tipos Literais                                           |
+|---------------|------------------------------|---------------------------|------------------|----------------------------------------------------------|
+| C             | int, short, long             | float, double             | _Bool            | char                                                     |
+| C++           | int, short, long             | float, double             | bool             | char, string                                             |
+| C#            | int, short, long, byte       | float, double             | bool             | char, string                                             |
+| Java          | int, short, long, byte       | float, double             | boolean          | char, String                                             |
+| JavaScript    | number                       | number                    | boolean          | string                                                   |
+| TypeScript    | number                       | number                    | boolean          | string                                                   |
+| PHP           | int                          | float, double             | bool             | string                                                   |
+| Kotlin        | Int, Short, Long, Byte       | Float, Double             | Boolean          | Char, String                                             |
+| Python        | int, complex                 | float                     | bool             | str                                                      |
 
 ## Declaração de Funções:
 ```c
