@@ -107,27 +107,43 @@ else:
 
 ## Declaração de Funções:
 ```c
+// C, C++, C#, Java
+
 int Soma(int x, int y) {
   return x + y;
-} // C, C++, C#, Java
+}
+```
+```javascript
+// JavaScript
 
 function Soma(x, y) {
   return x + y;
-} // JavaScript
+}
+```
+```typescript
+// TypeScript
 
 function Soma(x: number, y: number): number {
   return x + y;
-} // TypeScript
+}
+```
+```php
+// PHP
 
 function Soma(int $x, int $y) {
   return $x + $y;
-} // PHP
+}
+```
+```kotlin
+// Kotlin
 
 fun Soma(x: Int, y: Int): Int {
   return x + y
-} // Kotlin
+}
+```
+```python
+// Python
 
 def Soma(x, y):
   return x + y
-// Python
 ```
