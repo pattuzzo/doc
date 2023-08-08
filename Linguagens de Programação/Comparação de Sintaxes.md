@@ -11,17 +11,82 @@ quantidade = 5 // Python
 ```
 
 ## Tipos de Dados:
-| Linguagem     | Tipos Inteiros               | Tipos de Ponto Flutuante  | Tipos Booleanos | Tipos Literais                                           |
-|---------------|------------------------------|---------------------------|------------------|----------------------------------------------------------|
-| C             | int, short, long             | float, double             | _Bool            | char                                                     |
-| C++           | int, short, long             | float, double             | bool             | char, string                                             |
-| C#            | int, short, long, byte       | float, double             | bool             | char, string                                             |
-| Java          | int, short, long, byte       | float, double             | boolean          | char, String                                             |
-| JavaScript    | number                       | number                    | boolean          | string                                                   |
-| TypeScript    | number                       | number                    | boolean          | string                                                   |
-| PHP           | int                          | float, double             | bool             | string                                                   |
-| Kotlin        | Int, Short, Long, Byte       | Float, Double             | Boolean          | Char, String                                             |
-| Python        | int, complex                 | float                     | bool             | str                                                      |
+| Linguagem     | Tipos Inteiros               | Tipos de Ponto Flutuante  | Tipos Booleanos | Tipos Literais |     Outros      |
+|---------------|------------------------------|---------------------------|------------------|---------------|-----------------|
+| C             | int, short, long             | float, double             | _Bool            | char          |                 |
+| C++           | int, short, long             | float, double             | bool             | char, string  |                 |
+| C#            | int, short, long, byte       | float, double             | bool             | char, string  |                 |
+| Java          | int, short, long, byte       | float, double             | boolean          | char, String  |                 |
+| JavaScript    | number                       | number                    | boolean          | string        | null, undefined |
+| TypeScript    | number                       | number                    | boolean          | string        | null, undefined |
+| PHP           | int                          | float, double             | bool             | string        |                 |
+| Kotlin        | Int, Short, Long, Byte       | Float, Double             | Boolean          | Char, String  |                 |
+| Python        | int, complex                 | float                     | bool             | str           |                 |
+
+## Estruturas Condicionais:
+```c
+if (condicao1) {
+  // code
+} else if (condicao2) {
+  // code
+} else {
+  // code
+} // C, C++, C#, Java, JavaScript, TypeScript, PHP, Kotlin
+
+if condicao1:
+  // code
+elif condicao2:
+  // code
+else:
+  // code
+// Python
+
+
+switch (opcao) {
+  case 1:
+    // code
+    break;
+  case 2:
+    // code
+    break;
+  default:
+    // code
+    break;
+} // C, C++, C#, Java, JavaScript, TypeScript
+
+switch ($opcao) {
+  case 1:
+    // code
+    break;
+  case 2:
+    // code
+    break;
+  default:
+    // code
+    break;
+} // PHP
+
+when (opcao) {
+  1 -> {
+    // code
+  }
+  2 -> {
+    // code
+  }
+  else -> {
+    // code
+  }
+} // Kotlin
+
+if opcao == 1:
+  // code
+elif opcao == 2:
+  // code
+else:
+  // code
+// Python
+
+```
 
 ## Declaração de Funções:
 ```c
