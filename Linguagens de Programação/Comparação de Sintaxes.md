@@ -2,7 +2,7 @@
 
 <p>C: ```c
   type name_function() {
-
+    <br>
   }
 ```
 <p/>
