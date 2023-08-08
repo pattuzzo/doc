@@ -4,7 +4,7 @@
 #### C:
 ```c
 // tipo nome-da-variável operador-de-atribuição valor  
-int name = 5;
+int           name               =              5;
 ```
 #### JavaScript:
 #### TypeScript:
