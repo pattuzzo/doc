@@ -24,6 +24,7 @@ quantidade = 5 // Python
 | Python        | int, complex                 | float                     | bool             | str           |                 |
 
 ## Estruturas Condicionais:
+### IF-ELSE:
 ```c
 // C, C++, C#, Java, JavaScript, TypeScript, PHP, Kotlin
 
@@ -35,7 +36,6 @@ if (condicao1) {
   // code
 }
 ```
-
 ```python
 # Python
 
@@ -48,6 +48,7 @@ else:
 // Python
 ```
 
+### SWITCH (ou equivalente):
 ```c
 // C, C++, C#, Java, JavaScript, TypeScript
 
@@ -63,7 +64,6 @@ switch (opcao) {
     break;
 }
 ```
-
 ```php
 // PHP
 
@@ -79,7 +79,6 @@ switch ($opcao) {
     break;
 }
 ```
-
 ```kotlin
 // Kotlin
 
@@ -95,7 +94,6 @@ when (opcao) {
   }
 }
 ```
-
 ```python
 # Python
 
