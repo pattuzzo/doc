@@ -15,6 +15,7 @@ Com certeza! Vou reorganizar a tabela, dando destaque aos tipos de dados e lista
 
 | Tipos de Dados                 | Linguagens Suportadas                                            |
 |--------------------------------|------------------------------------------------------------------|
+| **int**                        | C, C++, C#, Java, Kotlin, Python, PHP                            |
 | **Tipos Inteiros**             | C, C++, C#, Java, Kotlin, Python, PHP                            |
 | **Tipos de Ponto Flutuante**   | C, C++, C#, Java, Kotlin, PHP                                    |
 
