@@ -1,6 +1,6 @@
-# Guia de Instalação e Apresentação do Visual Studio Code (VS Code)
+# Guia de Instalação e Apresentação do Visual Studio Code
 
-Neste guia, apresentaremos o Visual Studio Code (VS Code), um editor de código gratuito, de código aberto e altamente extensível desenvolvido pela Microsoft. Além de abordar sua instalação, também especificaremos para quais tecnologias e linguagens ele é mais recomendado.
+Neste guia, apresentaremos o Visual Studio Code, um editor de código gratuito, de código aberto e altamente extensível desenvolvido pela Microsoft. Além de abordar sua instalação, também especificaremos para quais tecnologias e linguagens ele é mais recomendado.
 
 ![Visual Studio Code](https://code.visualstudio.com/assets/home/home-screenshot-win-lg.png)
 
