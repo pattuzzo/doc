@@ -88,3 +88,50 @@ Referências
   - [Construtores de Função e Protótipos](#construtores-de-função-e-protótipos-resumo)
 - [Boas Práticas](#boas-práticas)
 - [Referências](#referências)
+
+## Introdução às Funções
+  ### O que é uma Função?
+  ### Sintaxe Básica
+  ### Declaração
+  ### Parâmetros e Valores Padrão
+  ### Operador Spread em Parâmetros
+  ### Retorno da Função
+## Chamada de Funções
+  ### Como Chamar uma Função
+  ### Argumentos em Chamadas de Função
+  ### Uso do Operador Spread na Chamada de Funções
+## Tipos de Funções
+  ### Função Nomeada
+  ### Função Anônima
+  ### Função de Seta (Arrow Function)
+  ### Função Autoinvocada (IIFE)
+## Escopo de Função
+  ### Variáveis e Escopo
+  ### Closure
+## Técnicas Avançadas de Funções
+  ### Recursividade
+  ### Callbacks
+  ### Funções de Ordem Superior
+## Construtores de Função e Protótipos
+  ### Declaração de Construtores de Função
+  ### Utilização de Protótipos
+## Resumo
+- ### Introdução às Funções
+  resumo
+- ### Chamada de Funções
+  resumo
+- ### Tipos de Funções
+  - Função Nomeada
+  - Função Anônima
+  - Função de Seta (Arrow Function)
+  - Função Autoinvocada (IIFE)
+- ### Escopo de Função
+  resumo
+- ### Técnicas Avançadas
+  - Recursividade
+  - Callbacks
+  - Funções de Ordem Superior
+- ### Construtores de Função e Protótipos
+  resumo
+## Boas Práticas
+## Referências
