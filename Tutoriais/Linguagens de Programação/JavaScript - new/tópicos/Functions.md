@@ -75,16 +75,16 @@ Referências
   - [Recursividade](#recursividade)
   - [Callbacks](#callbacks)
   - [Funções de Ordem Superior](#funções-de-ordem-superior)
-- [Construtores de Função e Protótipos](#construtores-de-função-e-protótipos)
-  - [Declaração de Construtores de Função](#declaração-de-construtores-de-função)
-  - [Utilização de Protótipos](#utilização-de-protótipos)
+- [Construtores de Função e Objetos](#construtores-de-função-e-objetos)
+  - [Construtor Dinâmico de Função](#construtor-dinâmico-de-função)
+  - [Funções como Modelos Primitivos de Construtores de Objetos](#funções-como-modelos-primitivos-de-construtores-de-objetos)
 - [Resumo](#resumo)
-  - [Introdução às Funções](#introdução-às-funções-resumo)
-  - [Chamada de Funções](#chamada-de-funções-resumo)
-  - [Tipos de Funções](#tipos-de-funções-resumo)
-  - [Escopo de Função](#escopo-de-função-resumo)
-  - [Técnicas Avançadas](#técnicas-avançadas-resumo)
-  - [Construtores de Função e Protótipos](#construtores-de-função-e-protótipos-resumo)
+  - [Introdução às Funções](#introdução-às-funções)
+  - [Chamada de Funções](#chamada-de-funções)
+  - [Tipos de Funções](#tipos-de-funções)
+  - [Escopo de Função](#escopo-de-função)
+  - [Técnicas Avançadas](#técnicas-avançadas)
+  - [Construtores de Função e Objetos](#construtores-de-função-e-objetos)
 - [Boas Práticas](#boas-práticas)
 - [Referências](#referências)
 
@@ -129,6 +129,8 @@ Vamos mergulhar nesse universo fascinante das funções em JavaScript e desvenda
   Neste exemplo, a função `calcularPotencia` possui dois parâmetros, `base` e `expoente`. O `expoente` tem um valor padrão de `2`. Isso significa que, se o segundo argumento não for fornecido durante a chamada da função, ele será automaticamente assumido como `2`.
 
   ### Operador Spread em Parâmetros
+  O operador spread em JavaScript, também chamado de "operador de propagação", é representado por `...`. Ele propaga os elementos de uma estrutura iterável, como um array, para um novo contexto, como argumentos de função, elementos de um novo array ou propriedades de objetos, facilitando a manipulação e criação de cópias de dados de maneira concisa.
+
   O operador spread `...` em parâmetros é uma ferramenta útil para lidar com um número variável de argumentos em funções, transformando-os em um array de elementos. No entanto, é importante notar que, uma vez utilizado o operador spread, não é possível colocar parâmetros adicionais após ele.
 
   ```javascript
@@ -283,15 +285,15 @@ O escopo de função é um conceito fundamental em JavaScript que governa a visi
   Closure ocorre quando uma função é declarada dentro do corpo de outra função, e a função interna referencia variáveis da função externa. Vejamos um exemplo:
 
   ```javascript
-  1 function criarCumprimento(nome) {
-  2   let mensagem = `Olá, ${nome}!`;
-  3
-  4   function cumprimentar() {
-  5     console.log(mensagem);
-  6   }
-  7
-  8   return cumprimentar;
-  9 }
+   1 function criarCumprimento(nome) {
+   2   let mensagem = `Olá, ${nome}!`;
+   3
+   4   function cumprimentar() {
+   5     console.log(mensagem);
+   6   }
+   7
+   8   return cumprimentar;
+   9 }
   10
   11 const cumprimentarUsuario = criarCumprimento("Alice");
   12 cumprimentarUsuario(); // Saída: Olá, Alice!
@@ -300,32 +302,300 @@ O escopo de função é um conceito fundamental em JavaScript que governa a visi
   No exemplo acima, `criarCumprimento` retorna a função `cumprimentar`, e essa função interna ainda tem acesso à variável `mensagem` mesmo após a conclusão da execução de `criarCumprimento`.
 
   Compreender e saber utilizar closures é fundamental para escrever código JavaScript mais modular, eficiente e seguro. Essa capacidade de criar funções que "lembram" de seus ambientes de criação é uma característica distintiva e poderosa da linguagem.
-## Técnicas Avançadas de Funções
+## Técnicas Avançadas de Funções em JavaScript
+Explorar técnicas avançadas de funções em JavaScript amplia a capacidade de desenvolver código eficiente e flexível. Vamos aprofundar-nos em três conceitos fundamentais: recursividade, callbacks e funções de ordem superior.
+
   ### Recursividade
+  Recursividade é uma técnica onde uma função chama a si mesma para resolver um problema. Ela é frequentemente utilizada em situações em que um problema pode ser dividido em subproblemas menores e mais simples.
+
+  ```javascript
+  1 function calcularFatorial(n) {
+  2   if (n <= 1) {
+  3     return 1;
+  4   } else {
+  5     return n * calcularFatorial(n - 1);
+  6   }
+  7 }
+  8
+  9 const resultado = calcularFatorial(4); // Resultado: 24
+  ```
+
+  No exemplo acima, `calcularFatorial` é uma função recursiva que calcula o fatorial de um número.
+
+  Alguns pontos importantes sobre a recursividade em JavaScript:
+
+  - **Caso Base**: Toda função recursiva deve ter um caso base para evitar a recursão infinita. No exemplo do fatorial, o caso base é quando `n` é menor ou igual a 1.
+
+  - **Divisão em Subproblemas**: A ideia central é dividir um problema em subproblemas menores e mais simples, resolvendo cada subproblema recursivamente.
+
+  - **Memória**: Funções recursivas consomem mais memória, já que cada chamada de função é empilhada na pilha de chamadas. Em casos extremos, isso pode levar a um estouro de pilha (stack overflow).
+
   ### Callbacks
+  Callbacks são funções passadas como argumentos para outras funções e executadas posteriormente, muitas vezes em resposta a eventos ou após a conclusão de uma operação assíncrona.
+
+  ```javascript
+   1 function operacaoAssincrona(callback) {
+   2   setTimeout(function() {
+   3     console.log("Operação Assíncrona Concluída");
+   4     callback();
+   5   }, 1000);
+   6 }
+   7
+   8 function finalizar() {
+   9   console.log("Finalizando...");
+  10 }
+  11
+  12 operacaoAssincrona(finalizar);
+  13 // Saída:
+  14 // Operação Assíncrona Concluída
+  15 // Finalizando...
+  ```
+
+  No exemplo acima, `operacaoAssincrona` recebe uma função `finalizar` como callback, e essa função é executada após a conclusão da operação assíncrona.
+
+  Alguns pontos importantes sobre callbacks:
+
+  - **Assincronicidade**: São comumente usados para lidar com operações assíncronas, como requisições AJAX, leitura de arquivos e temporizadores.
+
+  - **Ordenação de Execução**: A ordem de execução das funções que utilizam callbacks pode depender do contexto e do tipo de operação assíncrona.
+
+  - **Hell de Callback**: Muitos callbacks aninhados podem resultar em código difícil de ler e manter, conhecido como "Callback Hell" ou "Pyramid of Doom". Promises e async/await são alternativas para mitigar esse problema.
+
   ### Funções de Ordem Superior
-## Construtores de Função e Protótipos
-  ### Declaração de Construtores de Função
-  ### Utilização de Protótipos
+  Funções de Ordem Superior são aquelas que podem receber outras funções como parâmetros ou retornar funções. Elas são fundamentais para a criação de código mais modular e reutilizável.
+
+  ```javascript
+   1 function criarOperacaoMatematica(operacao) {
+   2   if (operacao === "soma") {
+   3     return (function(a, b) {
+   4       return a + b;
+   5     });
+   6   } else if (operacao === "multiplicacao") {
+   7     return (function(a, b) {
+   8       return a * b;
+   9     });
+  10   }
+  11 }
+  12
+  13 const somar = criarOperacaoMatematica("soma");
+  14 const multiplicar = criarOperacaoMatematica("multiplicacao");
+  15
+  16 console.log(somar(3, 4)); // Saída: 7
+  17 console.log(multiplicar(3, 4)); // Saída: 12
+  ```
+
+  No exemplo acima, `criarOperacaoMatematica` é uma função de ordem superior que retorna funções com base na operação desejada.
+
+  Alguns pontos importantes sobre funções de ordem superior:
+
+  - **Flexibilidade**: Permitem criar abstrações mais poderosas e flexíveis, tratando funções como cidadãos de primeira classe.
+
+  - **Composição de Funções**: A capacidade de compor funções, combinando-as para criar funcionalidades mais complexas, é uma característica importante das funções de ordem superior.
+
+  - **Reutilização de Código**: Facilitam a reutilização de código, pois você pode passar funções como argumentos ou retorná-las de outras funções.
+
+  Essas técnicas avançadas de funções proporcionam maior flexibilidade e expressividade ao código JavaScript, permitindo a criação de soluções mais elegantes e eficientes para diferentes desafios de programação.
+## Construtores de Função e Objetos
+  ### Construtor Dinâmico de Função
+  Em JavaScript, é possível criar funções dinamicamente utilizando o construtor `Function`. Essa abordagem permite a definição de funções com base em strings de código. Ao utilizar o construtor `Function`, você especifica os parâmetros da função como strings, seguidos pelo corpo da função também como uma string.
+
+  **Exemplo: Criando uma Função com o Construtor `Function`:**
+  ```javascript
+  1 // Criando uma função que soma dois números
+  2 let soma = new Function('a', 'b', 'return a + b');
+  3
+  4 // Chamando a função e atribuindo o resultado a uma variável
+  5 const resultado = soma(3, 5);
+  6
+  7 console.log(resultado); // Saída: 8
+  ```
+
+  No exemplo acima, os parâmetros `a` e `b` são especificados como strings na criação da função. Em seguida, o corpo da função, que neste caso é `return a + b`, também é especificado como uma string. Essa abordagem proporciona uma maneira dinâmica de criar funções, mas é importante ter cautela ao utilizar código baseado em strings, devido a riscos potenciais de segurança.
+
+  ### Funções como Modelos Primitivos de Construtores de Objetos
+  Construtores de função são funções especiais usadas para criar e inicializar objetos. Eles agem como "modelos" para os objetos que serão instanciados.
+
+  **Exemplo: Construtor de Carro:**
+  ```javascript
+   1 function Carro(marca, modelo) {
+   2   this.marca = marca;
+   3   this.modelo = modelo;
+   4   this.ligar = function() {
+   5     console.log("Carro ligado!");
+   6   };
+   7 }
+   8 
+   9 const meuCarro = new Carro("Toyota", "Corolla");
+  10 meuCarro.ligar(); // Saída: Carro ligado!
+  ```
+
+  Neste exemplo, `Carro` é um construtor de função que cria objetos do tipo carro com propriedades como marca e modelo, além do método `ligar`.
+
+  Entender como usar construtores de função e objetos é essencial para a construção de aplicações mais robustas e eficientes em JavaScript. Esses conceitos formam a base para a criação de estruturas de dados mais complexas e a implementação de herança em JavaScript.
+
 ## Resumo
 - ### Introdução às Funções
-  resumo
+  - **O que é uma Função?:** Uma função em JavaScript é um bloco de código reutilizável projetado para realizar uma tarefa específica. Pode receber entrada, executar operações e retornar um resultado. 
+  - **Sintaxe Básica:** As funções são definidas usando a palavra-chave `function`, seguida pelo nome da função e parênteses que podem conter parâmetros.
+  - **Parâmetros e Valores Padrão:** Funções podem aceitar parâmetros, e valores padrão podem ser atribuídos a esses parâmetros para lidar com casos em que nenhum valor é fornecido.
+  - **Operador Spread em Parâmetros:** O operador spread (`...`) pode ser usado para passar um número variável de argumentos para uma função.
+  - **Retorno da Função:** As funções podem retornar valores usando a palavra-chave `return`.
+
+    ```javascript
+    function exemplo(parametro, parametroPadrao = "Valor Padrão", ...parametrosSpread) {
+      return resultado;
+    }
+    ```
+
 - ### Chamada de Funções
-  resumo
+  - **Como Chamar uma Função:** Uma função é chamada pelo seu nome seguido por parênteses, e os argumentos podem ser passados entre esses parênteses.
+  - **Argumentos em Chamadas de Função:** Os argumentos fornecidos durante a chamada da função são atribuídos aos parâmetros definidos na declaração da função.
+  - **Uso do Operador Spread na Chamada de Funções:** O operador spread também pode ser aplicado ao chamar funções para espalhar elementos de uma matriz como argumentos.
+
+    ```javascript
+    exemplo(argumento, , ...argumentosSpread) {
+    ```
+
 - ### Tipos de Funções
-  - Função Nomeada: resumo
-  - Função Anônima: resumo
-  - Função de Seta (Arrow Function): resumo
-  - Função Autoinvocada (IIFE): resumo
+  - **Função Nomeada:** Funções que têm um nome identificador.
+  - **Função Anônima:** Funções sem um nome específico, geralmente atribuídas a variáveis ou usadas como argumentos em outras funções.
+  - **Função de Seta (Arrow Function):** Uma forma mais concisa de escrever funções, introduzida no ECMAScript 6.
+  - **Função Autoinvocada (IIFE):** Funções que são declaradas e executadas imediatamente.
+
+    ```javascript
+    // Função Nomeada
+    function funcaoNomeada() {
+      console.log("Eu sou uma função nomeada.");
+    }
+
+    // Função Anônima
+    let funcaoAnonima = function() {
+      console.log("Eu sou uma função anônima.");
+    };
+
+    // Função de Seta (Arrow Function)
+    let adicao = (a, b) => {
+      return a + b;
+    };
+
+    // ou
+
+    let adicao = (a, b) => a + b;
+
+    // Função Autoinvocada (IIFE)
+    (function() {
+      console.log("Eu sou uma IIFE.");
+    })();
+    ```
+
 - ### Escopo de Função
-  resumo
+  - **Variáveis e Escopo:** As variáveis declaradas dentro de uma função têm escopo local, não sendo acessíveis fora da função.
+  - **Closures:** Closures ocorrem quando uma função tem acesso às variáveis de seu escopo externo, mesmo após a execução dessa função.
+
+    ```javascript
+    // Variáveis e Escopo
+    function exemploEscopo() {
+      let variavelLocal = "Eu sou local";
+      console.log(variavelLocal);
+    }
+
+    // Closures
+    function criaFuncaoClosure() {
+      let mensagem = "Olá";
+
+      function cumprimentar(nome) {
+        console.log(mensagem + ", " + nome + "!");
+      }
+
+      return cumprimentar;
+    }
+
+    let cumprimentarUsuario = criaFuncaoClosure();
+    cumprimentarUsuario("Bob"); // Saída: Olá, Bob!
+    ```
+
 - ### Técnicas Avançadas
-  - Recursividade: resumo
-  - Callbacks: resumo
-  - Funções de Ordem Superior: resumo
-- ### Construtores de Função e Protótipos
-  resumo
+  - **Recursividade:** Uma função pode chamar a si mesma, útil em casos onde a solução pode ser dividida em subproblemas semelhantes.
+  - **Callbacks:** Funções que são passadas como argumentos para outras funções e executadas posteriormente.
+  - **Funções de Ordem Superior:** Funções que podem receber outras funções como argumentos ou retorná-las como resultados.
+
+    ```javascript
+    // Recursividade
+    function fatorial(n) {
+      return n <= 1 ? 1 : n * fatorial(n - 1);
+    }
+
+    // Callbacks
+    function operacaoAssincrona(callback) {
+      setTimeout(function() {
+        console.log("Operação concluída.");
+        callback();
+      }, 2000);
+    }
+
+    // Funções de Ordem Superior
+    function dobrarCadaElemento(arr, callback) {
+      return arr.map(callback);
+    }
+    ```
+
+- ### Construtores de Função e Objetos
+  - **Construtor Dinâmico de Função:** É possível criar funções dinamicamente usando o construtor `Function`.
+  - **Funções como Modelos Primitivos de Construtores de Objetos:** Funções podem ser usadas como construtores para criar objetos com propriedades e métodos específicos.
+
+    ```javascript
+    // Construtor Dinâmico de Função
+    let dinamica = new Function('a', 'b', 'return a + b;');
+    console.log(dinamica(3, 4)); // Saída: 7
+
+    // Funções como Modelos Primitivos de Construtores de Objetos
+    function Pessoa(nome, idade) {
+      this.nome = nome;
+      this.idade = idade;
+    }
+
+    let pessoa1 = new Pessoa("Joana", 25);
+    console.log(pessoa1); // Saída: { nome: 'Joana', idade: 25 }
+    ```
 ## Boas Práticas
+1. **Nomenclatura Descritiva:**
+   - Escolha nomes de funções que reflitam claramente sua finalidade e ação.
+   - Evite abreviações ambíguas e opte por nomes que comuniquem de forma eficaz o propósito da função.
+
+2. **Limitação de Responsabilidades:**
+   - Mantenha funções com responsabilidades específicas e bem definidas.
+   - Evite funções que realizem tarefas muito amplas; caso contrário, considere a divisão em funções menores.
+
+3. **Parâmetros Claros:**
+   - Seja explícito ao nomear e definir os parâmetros das funções.
+   - Evite funções com um número excessivo de parâmetros; isso pode indicar a necessidade de reavaliar a estrutura.
+
+4. **Retorno Significativo:**
+   - Certifique-se de que o valor retornado pela função seja relevante e esperado.
+   - Evite retornos desnecessários ou valores que não contribuam para o propósito da função.
+
+5. **Evitar Efeitos Colaterais:**
+   - Minimize ou evite efeitos colaterais dentro das funções.
+   - Tente manter as funções puras, ou seja, funções que dependem apenas de seus argumentos e não modificam variáveis fora do escopo da função.
+
+6. **Documentação Clara:**
+   - Inclua comentários descritivos para explicar a finalidade, os parâmetros e o retorno da função.
+   - Mantenha a documentação atualizada conforme a função evolui.
+
+7. **Testes Adequados:**
+   - Desenvolva testes abrangentes para suas funções, cobrindo diferentes casos de uso e situações de entrada.
+   - Utilize ferramentas de teste, como Jest ou Mocha, para automatizar e facilitar a execução de testes.
+
+8. **Reutilização de Código:**
+   - Identifique oportunidades de reutilização de código através de funções.
+   - Considere criar funções genéricas e modulares que possam ser aplicadas em diferentes partes do seu projeto.
+
+9. **Gestão de Exceções:**
+   - Trate erros de forma apropriada dentro das funções, utilizando blocos try-catch quando necessário.
+   - Forneça feedback significativo em mensagens de erro para facilitar a depuração.
+
+10. **Avaliação de Desempenho:**
+    - Ao lidar com funções críticas para o desempenho, otimize-as para garantir uma execução eficiente.
 
 ## Referências
 - [Funções - W3School](https://www.w3schools.com/js/js_function_definition.asp)
