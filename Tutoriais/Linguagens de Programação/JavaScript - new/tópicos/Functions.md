@@ -347,7 +347,6 @@ Explorar técnicas avançadas de funções em JavaScript amplia a capacidade de 
   ### Construtor Dinâmico de Função
   Em JavaScript, é possível criar funções dinamicamente utilizando o construtor `Function`. Essa abordagem permite a definição de funções com base em strings de código. Ao utilizar o construtor `Function`, você especifica os parâmetros da função como strings, seguidos pelo corpo da função também como uma string.
 
-  **Exemplo: Criando uma Função com o Construtor `Function`:**
   ```javascript
   1 // Criando uma função que soma dois números
   2 let soma = new Function('a', 'b', 'return a + b');
@@ -363,7 +362,6 @@ Explorar técnicas avançadas de funções em JavaScript amplia a capacidade de 
   ### Funções como Modelos Primitivos de Construtores de Objetos
   Construtores de função são funções especiais usadas para criar e inicializar objetos. Eles agem como "modelos" para os objetos que serão instanciados.
 
-  **Exemplo: Construtor de Carro:**
   ```javascript
    1 function Carro(marca, modelo) {
    2   this.marca = marca;
@@ -507,43 +505,40 @@ Explorar técnicas avançadas de funções em JavaScript amplia a capacidade de 
     ```
 ## Boas Práticas
 1. **Nomenclatura Descritiva:**
-   - Escolha nomes de funções que reflitam claramente sua finalidade e ação.
-   - Evite abreviações ambíguas e opte por nomes que comuniquem de forma eficaz o propósito da função.
+   - Escolha nomes descritivos para suas funções que indiquem claramente o que elas fazem. Isso facilita a leitura e compreensão do código.
 
-2. **Limitação de Responsabilidades:**
-   - Mantenha funções com responsabilidades específicas e bem definidas.
-   - Evite funções que realizem tarefas muito amplas; caso contrário, considere a divisão em funções menores.
+2. **Reutilização de Código:**
+   - Promova a reutilização de código ao criar funções que realizem tarefas específicas. Isso facilita a manutenção e evita a duplicação de código.
 
-3. **Parâmetros Claros:**
-   - Seja explícito ao nomear e definir os parâmetros das funções.
-   - Evite funções com um número excessivo de parâmetros; isso pode indicar a necessidade de reavaliar a estrutura.
+3. **Limitação do Escopo:**
+   - Mantenha o escopo das suas funções o mais limitado possível. Evite o uso de variáveis globais sempre que possível para evitar possíveis conflitos.
 
-4. **Retorno Significativo:**
-   - Certifique-se de que o valor retornado pela função seja relevante e esperado.
-   - Evite retornos desnecessários ou valores que não contribuam para o propósito da função.
+4. **Parâmetros Explícitos:**
+   - Evite depender de variáveis globais dentro das funções. Em vez disso, passe parâmetros explicitamente para garantir uma melhor modularidade.
 
-5. **Evitar Efeitos Colaterais:**
-   - Minimize ou evite efeitos colaterais dentro das funções.
-   - Tente manter as funções puras, ou seja, funções que dependem apenas de seus argumentos e não modificam variáveis fora do escopo da função.
+5. **Documentação Clara:**
+   - Forneça comentários ou documentação adequada para suas funções, descrevendo o propósito, parâmetros e valores de retorno. Isso auxilia outros desenvolvedores que possam trabalhar no código.
 
-6. **Documentação Clara:**
-   - Inclua comentários descritivos para explicar a finalidade, os parâmetros e o retorno da função.
-   - Mantenha a documentação atualizada conforme a função evolui.
+6. **Retorno Consistente:**
+   - Mantenha um padrão consistente para os valores de retorno das funções. Isso ajuda a prever o comportamento da função em diferentes situações.
 
-7. **Testes Adequados:**
-   - Desenvolva testes abrangentes para suas funções, cobrindo diferentes casos de uso e situações de entrada.
-   - Utilize ferramentas de teste, como Jest ou Mocha, para automatizar e facilitar a execução de testes.
+7. **Uso de Arrow Functions:**
+   - Considere o uso de arrow functions para funções simples e de uma única expressão. Elas oferecem uma sintaxe mais concisa.
 
-8. **Reutilização de Código:**
-   - Identifique oportunidades de reutilização de código através de funções.
-   - Considere criar funções genéricas e modulares que possam ser aplicadas em diferentes partes do seu projeto.
+8. **Gestão de Exceções:**
+   - Implemente tratamento de exceções nas funções para lidar com erros de forma adequada, melhorando a robustez do código.
 
-9. **Gestão de Exceções:**
-   - Trate erros de forma apropriada dentro das funções, utilizando blocos try-catch quando necessário.
-   - Forneça feedback significativo em mensagens de erro para facilitar a depuração.
+9. **Testes Unitários:**
+   - Ao criar funções, desenvolva casos de teste para garantir que elas funcionem corretamente em diversas situações. Isso ajuda a manter a confiabilidade do código.
 
-10. **Avaliação de Desempenho:**
-    - Ao lidar com funções críticas para o desempenho, otimize-as para garantir uma execução eficiente.
+10. **Evitar Funções Anônimas em Métodos Públicos:**
+    - Evite o uso excessivo de funções anônimas em métodos públicos, pois isso pode tornar o código menos legível e dificultar a depuração.
+
+11. **Consistência de Estilo:**
+    - Adote um estilo consistente ao declarar funções. Seja consistente com o uso de ponto e vírgula, indentação e espaçamento.
+
+12. **Conhecimento do Contexto:**
+    - Esteja ciente do contexto ao usar funções de ordem superior, closures e callbacks. Compreender o escopo é essencial para evitar comportamentos inesperados.
 
 ## Referências
 - [Funções - W3School](https://www.w3schools.com/js/js_function_definition.asp)
