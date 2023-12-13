@@ -1,0 +1,328 @@
+# Operadores
+
+## Sumário
+- [O que são Operadores?](o-que-são-operadores)
+- [Tipos de Operadores](#tipos-de-operadores)
+  - [Operador Unário](#operador-unário)
+  - [Operador Binário](#operador-binário)
+  - [Operador Ternário](#operador-ternário)
+- [Operadores](#operadores)
+  - [Operadores Aritméticos](#operadores-aritméticos)
+  - [Operadores de Atribuição](#operadores-de-atribuição)
+  - [Operadores de Comparação](#operadores-de-comparação)
+  - [Operadores Lógicos](#operadores-lógicos)
+  - [Operadores Bitwise](#operadores-bitwise)
+  - [Operador de Coalescência Nula](#operador-de-coalescência-nula)
+- [Operadores de Incremento e Decremento](#operadores-de-incremento-e-decremento)
+  - [Incremento](#incremento)
+    - [Incremento Pré-fixo](#incremento-pré-fixo)
+    - [Incremento Pós-fixo](#incremento-pós-fixo)
+  - [Decremento](#decremento)
+    - [Decremento Pré-fixo](#decremento-pré-fixo)
+    - [Decremento Pós-fixo](#decremento-pós-fixo)
+- [Precedência](#precedência)
+- [Resumo](#resumo)
+- [Boas Práticas](#boas-práticas)
+- [Referências](#referências)
+
+## O que são Operadores?
+Operadores são símbolos especiais em programação que realizam operações em variáveis e valores. Essas operações podem incluir cálculos matemáticos, comparações, atribuições e outras manipulações de dados. Os operadores são essenciais para construir expressões que formam a base da lógica de programação.
+
+## Tipos de Operadores
+Existem diferentes tipos de operadores em JavaScript, sendo os principais os Operadores Unários e Operadores Binários.
+
+### Operador Unário
+O Operador Unário atua sobre um único operando, realizando uma operação específica. Ele é frequentemente usado em situações como incremento/decremento, negação lógica e outras transformações unárias.
+
+```javascript
+let numero = 5;
+numero++; // Incrementa o valor de 'numero' em 1
+console.log(numero); // Resultado: 6
+```
+
+### Operador Binário
+O Operador Binário atua sobre dois operandos, realizando operações que envolvem comparações, aritmética, atribuições e outras interações entre dois valores.
+
+```javascript
+let a = 3;
+let b = 7;
+let resultado = a + b; // Soma os valores de 'a' e 'b'
+console.log(resultado); // Resultado: 10
+```
+
+## Operadores
+Operadores são elementos essenciais na construção de expressões e lógica de programação. Eles realizam diversas operações em variáveis e valores, proporcionando a flexibilidade necessária para manipular dados de forma eficiente.
+
+### Operadores Aritméticos
+Os Operadores Aritméticos são cruciais para realizar operações matemáticas em variáveis. Eles incluem adição, subtração, multiplicação, divisão, módulo (resto da divisão), incremento e decremento. Essas operações são essenciais para manipular números de forma eficiente em scripts JavaScript.
+
+| Operador | Descrição                  | 
+|----------|----------------------------|
+| `+`      | Adição                     |
+| `-`      | Subtração                  |
+| `*`      | Multiplicação              |
+| `/`      | Divisão                    |
+| `%`      | Módulo (resto da divisão)  |
+
+```javascript
+let a = 10;
+let b = 3;
+let soma = a + b; // Resultado: 13
+let subtracao = a - b; // Resultado: 7
+let multiplicacao = a * b; // Resultado: 30
+let divisao = a / b; // Resultado: 3.3333...
+let restoDivisao = a % b; // Resultado: 1
+```
+
+### Operadores de Atribuição
+Os Operadores de Atribuição são utilizados para atribuir valores a variáveis de maneira concisa. Eles incluem operadores como `+=`, que realiza a adição e atribuição simultaneamente.
+
+| Operador | Descrição                  | 
+|----------|----------------------------|
+| `=`      | Atribuição simples          |
+| `+=`     | Adição e atribuição         |
+| `-=`     | Subtração e atribuição      |
+| `*=`     | Multiplicação e atribuição  |
+| `/=`     | Divisão e atribuição        |
+| `%=`     | Módulo e atribuição         |
+
+```javascript
+let x = 5;
+x += 3; // Equivale a x = x + 3;
+```
+
+### Operadores de Comparação
+Os Operadores de Comparação são vitais para avaliar condições e comparar valores. Eles incluem operadores de igualdade, diferença, menor que, maior que, menor ou igual a, e maior ou igual a. Essas operações retornam valores booleanos (`true` ou `false`).
+
+| Operador | Descrição                  | 
+|----------|----------------------------|
+| `==`     | Igualdade (conversão de tipo)|
+| `===`    | Igualdade estrita          |
+| `!=`     | Diferença (conversão de tipo)|
+| `!==`    | Diferença estrita          |
+| `<`      | Menor que                  |
+| `>`      | Maior que                  |
+| `<=`     | Menor ou igual a           |
+| `>=`     | Maior ou igual a           |
+
+```javascript
+let idade = 20;
+let maiorIdade = idade >= 18; // Resultado: true
+let menorIdade = idade < 18; // Resultado: false
+```
+
+### Operadores Lógicos
+Os Operadores Lógicos são utilizados para combinar ou modificar valores booleanos. Eles incluem operadores como `&&` (AND lógico), `||` (OR lógico) e `!` (NOT lógico), proporcionando uma maneira eficiente de lidar com expressões condicionais.
+
+| Operador | Descrição                  | 
+|----------|----------------------------|
+| `&&`     | AND lógico                 |
+| `||`     | OR lógico                  |
+| `!`      | NOT lógico                 |
+
+```javascript
+let chuva = true;
+let vento = false;
+let tempoRuim = chuva && vento; // Resultado: false
+let tempoAceitavel = chuva || vento; // Resultado: true
+let naoEstaChovendo = !chuva; // Resultado: false
+```
+
+### Operadores Bitwise
+Os Operadores Bitwise são cruciais para operações a nível de bits em números inteiros. Eles incluem operadores como `&` (AND bitwise), `|` (OR bitwise), `^` (XOR bitwise), `~` (NOT bitwise), `<<` (shift para a esquerda) e `>>` (shift para a direita).
+
+| Operador | Descrição                  | 
+|----------|----------------------------|
+| `&`      | AND bitwise                |
+| `|`      | OR bitwise                 |
+| `^`      | XOR bitwise                |
+| `~`      | NOT bitwise                |
+| `<<`     | Shift left                 |
+| `>>`     | Shift right                |
+
+```javascript
+let x = 5; // Representado em binário como 101
+let y = 3; // Representado em binário como 011
+let resultadoAnd = x & y; // Resultado: 1 (binário 001)
+let resultadoOr = x | y; // Resultado: 7 (binário 111)
+```
+
+### Operador de Coalescência Nula
+O Operador de Coalescência Nula `??` é uma adição valiosa para lidar com valores nulos ou indefinidos, permitindo a definição de um valor padrão.
+
+```javascript
+let nomeUsuario = null;
+let nomePadrao = "Convidado";
+let nomeFinal = nomeUsuario ?? nomePadrao; // Resultado: "Convidado"
+```
+
+## Operadores de Incremento e Decremento
+Os Operadores de Incremento e Decremento são utilizados para aumentar ou diminuir o valor de uma variável em uma unidade. Eles oferecem duas formas principais de utilização: o Incremento e o Decremento, cada um com suas variantes.
+
+### Incremento
+O operador de Incremento adiciona uma unidade ao valor da variável. Ele pode ser aplicado de duas maneiras: Pré-fixo e Pós-fixo.
+
+#### Incremento Pré-fixo
+No Incremento Pré-fixo, a adição de uma unidade ocorre antes da avaliação da expressão envolvendo a variável.
+
+```javascript
+let a = 5;
+let resultado = ++a; // 'a' é incrementado antes da avaliação
+console.log(resultado); // Resultado: 6
+console.log(a); // 'a' após o incremento: 6
+```
+
+#### Incremento Pós-fixo
+No Incremento Pós-fixo, a adição de uma unidade ocorre após a avaliação da expressão envolvendo a variável.
+
+```javascript
+let b = 5;
+let resultado = b++; // 'b' é incrementado após a avaliação
+console.log(resultado); // Resultado: 5 (valor original de 'b')
+console.log(b); // 'b' após o incremento: 6
+```
+
+### Decremento
+O operador de Decremento subtrai uma unidade do valor da variável. Assim como o Incremento, ele pode ser aplicado de duas maneiras: Pré-fixo e Pós-fixo.
+
+#### Decremento Pré-fixo
+No Decremento Pré-fixo, a subtração de uma unidade ocorre antes da avaliação da expressão envolvendo a variável.
+
+```javascript
+let x = 8;
+let resultado = --x; // 'x' é decrementado antes da avaliação
+console.log(resultado); // Resultado: 7
+console.log(x); // 'x' após o decremento: 7
+```
+
+#### Decremento Pós-fixo
+No Decremento Pós-fixo, a subtração de uma unidade ocorre após a avaliação da expressão envolvendo a variável.
+
+```javascript
+let y = 8;
+let resultado = y--; // 'y' é decrementado após a avaliação
+console.log(resultado); // Resultado: 8 (valor original de 'y')
+console.log(y); // 'y' após o decremento: 7
+```
+
+Esses operadores são úteis para manipulação de variáveis em situações onde o aumento ou diminuição de valores é necessário. O entendimento da diferença entre o uso Pré-fixo e Pós-fixo é fundamental para evitar comportamentos inesperados em suas expressões.
+
+Estes operadores são peças-chave no desenvolvimento eficaz de scripts e aplicativos em JavaScript, capacitando os desenvolvedores a realizar diversas operações de maneira concisa e poderosa. Entender como esses operadores funcionam é crucial para a construção de lógica eficiente em seus programas.
+
+## Precedência
+A Precedência de Operadores determina a ordem em que as operações são realizadas em uma expressão. É crucial entender a precedência para garantir que as expressões sejam avaliadas conforme a intenção do desenvolvedor.
+
+| Nível | Operadores                         | Associatividade |
+|-------|-----------------------------------|-----------------|
+| 17    | `.` (member access)               | Left-to-right   |
+| 16    | `()` (function call)              | Left-to-right   |
+| 15    | `[]` (array subscript)            | Left-to-right   |
+| 14    | `++`, `--` (postfix)              | Left-to-right   |
+| 14    | `new` (object creation)           | Right-to-left   |
+| 13    | `++`, `--` (prefix)               | Right-to-left   |
+| 12    | `!`, `~`, `typeof`, `void`, `delete` | Right-to-left   |
+| 11    | `*`, `/`, `%`                     | Left-to-right   |
+| 10    | `+`, `-`                          | Left-to-right   |
+| 9     | `<<`, `>>`, `>>>`                 | Left-to-right   |
+| 8     | `<`, `<=`, `>`, `>=`, `in`, `instanceof` | Left-to-right |
+| 7     | `==`, `!=`, `===`, `!==`          | Left-to-right   |
+| 6     | `&`                               | Left-to-right   |
+| 5     | `^`                               | Left-to-right   |
+| 4     | `|`                               | Left-to-right   |
+| 3     | `&&`                              | Left-to-right   |
+| 2     | `||`                              | Left-to-right   |
+| 1     | `? :` (conditional)               | Right-to-left   |
+| 0     | `=`, `+=`, `-=`, `*=`, `/=`, `%=` | Right-to-left   |
+
+```javascript
+let resultado = 5 + 3 * 2; // Resultado: 11 (a multiplicação tem precedência)
+let resultado2 = (5 + 3) * 2; // Resultado: 16 (os parênteses alteram a precedência)
+```
+
+Essa tabela resume a precedência e associatividade dos operadores em JavaScript, indicando o nível de prioridade de cada operador em uma expressão. A associatividade define a direção na qual os operadores são avaliados quando têm a mesma precedência.
+
+Essas ferramentas são essenciais para manipular tipos de dados e garantir que as expressões sejam avaliadas corretamente. Entender a precedência de operadores é fundamental para escrever código claro e eficiente.
+
+## Resumo
+- ### **O que são Operadores?**
+  - Operadores são símbolos ou palavras-chave que realizam operações em operandos. Essas operações podem incluir aritmética, comparação, lógica e muito mais.
+- ### **Tipos de Operadores**
+  - **Operador Unário:** Atua em um único operando.
+  - **Operador Binário:** Opera em dois operandos.
+  - **Operador Terciário:** Conhecido como operador condicional (`condição ? expressao1 : expressao2`).
+- ### **Operadores**
+  - **Operadores Aritméticos:**
+    - Realizam operações matemáticas básicas.
+
+  - **Operadores de Atribuição:**
+    - Atribuem valores a variáveis.
+
+  - **Operadores de Comparação:**
+    - Comparação entre valores.
+
+  - **Operadores Lógicos:**
+    - Realizam operações lógicas como AND, OR e NOT.
+
+  - **Operador de Coalescência Nula:**
+    - Retorna o primeiro operando que não é nulo ou indefinido.
+
+  - **Operadores Bitwise:**
+    - Realizam operações bit a bit em valores inteiros.
+- ### **Operadores de Incremento e Decremento**
+  - **Incremento:** Aumenta o valor da variável.
+  - **Decremento:** Diminui o valor da variável.
+- ### **Precedência**
+  A precedência dos operadores determina a ordem em que as operações são executadas. Operadores com maior precedência são avaliados primeiro.
+
+## Boas Práticas
+### O que são Operadores?
+1. **Compreensão de Operadores:**
+   - Tenha uma compreensão clara do conceito de operadores em JavaScript, que são símbolos especiais que realizam operações em operandos.
+
+### Tipos de Operadores
+1. **Operador Unário:**
+   - Compreenda o operador unário, que opera em um único operando, realizando ações como negação ou conversão de tipo.
+
+2. **Operador Binário:**
+   - Entenda o operador binário, que opera em dois operandos, sendo os operadores aritméticos e lógicos exemplos comuns.
+
+3. **Operador Terciário:**
+   - Familiarize-se com o operador terciário (ou operador condicional), representado por `? :`, utilizado para expressões condicionais.
+
+### Operadores
+1. **Operadores Aritméticos:**
+   - Utilize os operadores aritméticos (`+`, `-`, `*`, `/`, `%`) com cuidado, lembrando-se das regras de precedência.
+
+2. **Operadores de Atribuição:**
+   - Conheça os operadores de atribuição (`=`, `+=`, `-=`, etc.) e evite o uso desnecessário para manter o código claro.
+
+3. **Operadores de Comparação:**
+   - Use os operadores de comparação (`==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`) com atenção aos tipos e evite comparações ambíguas.
+
+4. **Operadores Lógicos:**
+   - Utilize os operadores lógicos (`&&`, `||`, `!`) para avaliar expressões condicionais de maneira eficaz.
+
+5. **Operador de Coalescência Nula:**
+   - Aprenda a usar o operador de coalescência nula (`??`) para fornecer um valor padrão quando um valor é nulo ou indefinido.
+
+6. **Operadores Bitwise:**
+    - Ao trabalhar com operadores bitwise (`&`, `|`, `^`, `<<`, `>>`, `>>>`), compreenda suas características e use-os com propósito.
+
+### Operadores de Incremento e Decremento
+1. **Incremento:**
+    - Use o operador de incremento (`++`) com cautela, especialmente quando misturado com outras operações na mesma expressão.
+
+2. **Decremento:**
+    - Aplique o operador de decremento (`--`) de forma clara e evite sua mistura em expressões complexas.
+
+### Precedência
+1. **Conhecimento de Precedência:**
+    - Esteja ciente da precedência dos operadores para evitar ambiguidades em expressões complexas.
+
+## Referências
+- **JavaScript.Info**:
+  - [Operadores](https://javascript.info/operators)
+  - [Precedência](https://javascript.info/operators#operator-precedence)
+- **W3Schools**:
+  - [Operadores](https://www.w3schools.com/js/js_operators.asp)
+  - [Precedência](https://www.w3schools.com/js/js_precedence.asp)

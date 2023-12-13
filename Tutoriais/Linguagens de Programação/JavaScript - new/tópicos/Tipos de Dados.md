@@ -1,0 +1,211 @@
+# Tipos de Dados
+
+## Sumário
+- [O que são Tipos de Dados?](#o-que-são-tipos-de-dados)
+- [Tipos Primitivos](#tipos-primitivos)
+  - [Undefined](#undefined)
+  - [Null](#null)
+  - [Boolean](#boolean)
+  - [Number](#number)
+  - [BigInt](#bigint)
+  - [String](#string)
+  - [Symbol](#symbol)
+- [Tipos Compostos](#tipos-compostos)
+  - [Array](#array)
+  - [Object](#object)
+- [Operador de Tipo](#operador-de-tipo)
+  - [typeof](#typeof)
+  - [instanceof](#instanceof)
+- [Conversão de Tipos](#conversão-de-tipos)
+  - [Coerção](#coerção)
+  - [Conversão](#conversão)
+- [Resumo](#resumo)
+- [Boas Práticas](#boas-práticas)
+- [Referências](#referências)
+
+
+## O que são Tipos de Dados?
+## Tipos Primitivos
+  ### Undefined
+  ### Null
+  ### Boolean
+  ### Number
+  ### BigInt
+  ### String
+  ### Symbol
+## Tipos Compostos
+  ### Array
+  ### Object
+## Operador de Tipo
+  ### typeof
+  ### instanceof
+## Conversão de Tipos
+  ### Coerção
+  ### Conversão
+    #### Boolean()
+    #### Number()
+    #### String()
+
+
+## O que são Tipos de Dados?
+Os Tipos de Dados são a base da representação e manipulação de informações em linguagens de programação. Eles definem as características e operações que podem ser realizadas sobre os dados armazenados em variáveis. Em JavaScript, esses tipos podem ser divididos em Tipos Primitivos e Tipos de Objeto.
+
+## Tipos Primitivos
+Os Tipos Primitivos em JavaScript são valores simples, imutáveis e não possuem métodos ou propriedades próprios. Eles são a essência dos dados fundamentais em um programa.
+
+### Undefined
+O tipo `undefined` ocorre quando uma variável é declarada, mas ainda não recebeu um valor. É usado para indicar que a variável não foi inicializada.
+
+```javascript
+let x;
+console.log(x); // Resultado: undefined
+```
+
+### Null
+O tipo `null` representa a intencional ausência de valor. É frequentemente usado para indicar a falta de um objeto ou valor válido.
+
+```javascript
+let y = null;
+console.log(y); // Resultado: null
+```
+
+### Boolean
+O tipo `boolean` representa valores lógicos, podendo ser `true` ou `false`. É fundamental para estruturas de controle de fluxo.
+
+```javascript
+let estaChovendo = true;
+let temSol = false;
+```
+
+### Number
+O tipo `number` abrange valores numéricos, incluindo inteiros e de ponto flutuante. É usado para representar quantidades e realizar operações matemáticas.
+
+```javascript
+let idade = 25;
+let altura = 1.75;
+```
+
+### BigInt
+O tipo `bigint` é uma extensão do tipo `number` e é utilizado para representar inteiros de magnitude superior à capacidade dos números normais.
+
+```javascript
+let numeroGrande = 9007199254740992n;
+```
+
+### String
+O tipo `string` representa sequências de caracteres. Pode ser criado usando aspas simples ou duplas. É amplamente utilizado para manipulação de texto.
+
+```javascript
+let nome = "Alice";
+let frase = 'JavaScript é poderoso!';
+```
+
+### Symbol
+O tipo `symbol` é usado para criar identificadores únicos. Cada valor `symbol` é único e imutável, sendo útil para criação de propriedades de objetos que não colidem com outras.
+
+```javascript
+let simbolo1 = Symbol('descricao');
+let simbolo2 = Symbol('descricao');
+console.log(simbolo1 === simbolo2); // Resultado: false
+```
+
+## Tipos Compostos
+Os Tipos Compostos em JavaScript são estruturas de dados que podem armazenar múltiplos valores. Diferentemente dos Tipos Primitivos, esses tipos são compostos por outros valores ou objetos.
+
+### Array
+Um `Array` é uma estrutura de dados que permite armazenar uma coleção ordenada de valores, acessíveis por índices. Os arrays em JavaScript podem conter valores de diferentes tipos e são mutáveis.
+
+```javascript
+let numeros = [1, 2, 3, 4, 5];
+let frutas = ['maçã', 'banana', 'laranja'];
+```
+
+### Object
+Um `Object` é uma estrutura de dados que permite armazenar pares chave-valor. As chaves são strings ou símbolos, e os valores podem ser de qualquer tipo, incluindo outros objetos.
+
+```javascript
+let pessoa = {
+  nome: 'Alice',
+  idade: 25,
+  cidade: 'Exemplo City'
+};
+```
+
+## Operadores de Tipo
+Os Operadores de Tipo em JavaScript são utilizados para obter informações sobre o tipo de dados de uma variável ou expressão.
+
+### typeof
+O operador `typeof` retorna uma string que indica o tipo do operando. Ele é frequentemente utilizado para verificar o tipo de uma variável.
+
+```javascript
+let numero = 42;
+let texto = 'Olá, Mundo!';
+console.log(typeof numero); // Resultado: "number"
+console.log(typeof texto); // Resultado: "string"
+```
+
+### instanceof
+O operador `instanceof` verifica se um objeto é uma instância de um determinado tipo de objeto. Ele retorna um valor booleano.
+
+```javascript
+class Carro {}
+let meuCarro = new Carro();
+console.log(meuCarro instanceof Carro); // Resultado: true
+```
+
+## Conversão de Tipos
+A coerção de tipos em JavaScript refere-se à capacidade da linguagem de converter automaticamente valores de um tipo para outro durante operações. Essa conversão pode ser implícita (coerção), quando o próprio JavaScript realiza automaticamente, ou explícita (conversão), quando o desenvolvedor especifica a conversão manualmente. A coerção de tipos é uma característica fundamental em linguagens dinâmicas como JavaScript, mas pode levar a resultados inesperados se não for compreendida corretamente.
+
+### Coerção
+A Coerção de Tipos, ou "Type Coercion", é a conversão automática de um tipo de dado para outro pelo próprio JavaScript durante a execução. Isso geralmente acontece em operações envolvendo diferentes tipos.
+
+```javascript
+let numero = 42;
+let texto = '5';
+
+let resultado = numero + texto; // Coerção de tipo (concatenação)
+console.log(resultado); // Resultado: "425"
+```
+
+Neste exemplo, a Coerção de Tipos ocorre quando o número `42` é implicitamente convertido para uma string para permitir a concatenação com a string `'5'`.
+
+### Conversão
+A Conversão explícita, por outro lado, é a transformação manual de um tipo de dado para outro usando funções ou métodos específicos.
+
+### Boolean()
+A função `Boolean()` é utilizada para converter um valor para seu equivalente booleano. Ela segue regras simples:
+
+- Valores considerados falsy (como `0`, `NaN`, `null`, `undefined`, `false`, e a string vazia `''`) serão convertidos para `false`.
+- Qualquer outro valor será convertido para `true`.
+
+```javascript
+let valor1 = 0;
+let valor2 = 'Olá, Mundo!';
+
+console.log(Boolean(valor1)); // Resultado: false
+console.log(Boolean(valor2)); // Resultado: true
+```
+
+### Number()
+A função `Number()` converte um valor para seu equivalente numérico. Ela segue as regras padrão de coerção de tipos, mas permite uma conversão explícita.
+
+```javascript
+let textoNumero = '123';
+let textoNaoNumero = 'ABC';
+
+console.log(Number(textoNumero)); // Resultado: 123
+console.log(Number(textoNaoNumero)); // Resultado: NaN (Not a Number)
+```
+
+### String()
+A função `String()` converte um valor para seu equivalente em string, criando uma representação de texto do valor.
+
+```javascript
+let numero = 456;
+let booleano = true;
+
+console.log(String(numero)); // Resultado: "456"
+console.log(String(booleano)); // Resultado: "true"
+```
+
+Essas funções são úteis para garantir a consistência e a correta manipulação de dados em diferentes contextos, especialmente quando se trabalha com operações específicas de cada tipo.
